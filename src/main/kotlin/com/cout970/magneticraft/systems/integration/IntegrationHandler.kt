@@ -1,11 +1,8 @@
 package com.cout970.magneticraft.systems.integration
 
 import com.blamejared.mtlib.helpers.InputHelper
-import com.cout970.magneticraft.api.internal.registries.fuel.FluidFuelManager
 import com.cout970.magneticraft.misc.info
-import com.cout970.magneticraft.systems.integration.buildcraft.BuildcraftFuelManager
 import com.cout970.magneticraft.systems.integration.crafttweaker.CraftTweakerPlugin
-import com.cout970.magneticraft.systems.integration.tinkersconstruct.TinkersConstruct
 import net.minecraftforge.fml.common.Loader
 import net.minecraftforge.fml.common.ModAPIManager
 
@@ -30,22 +27,10 @@ object IntegrationHandler {
         buildcraftApi = ModAPIManager.INSTANCE.hasAPI("buildcraftapi_fuels")
         industrialForegoing = Loader.isModLoaded("industrialforegoing")
 
-        if (buildcraftApi) {
-            FluidFuelManager.FLUID_FUEL_MANAGER = BuildcraftFuelManager()
-        }
     }
 
     fun init() {
         if (craftTweaker) craftTweaker()
-        if (tconstruct) {
-            info("Starting tinkers construct integration")
-            try {
-                TinkersConstruct.registerOres()
-            } catch (e: Exception) {
-                e.printStackTrace()
-            }
-            info("Tinkers construct integration done")
-        }
     }
 
     private fun craftTweaker() {

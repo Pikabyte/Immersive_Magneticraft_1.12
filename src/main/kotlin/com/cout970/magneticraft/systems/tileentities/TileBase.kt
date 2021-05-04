@@ -4,11 +4,8 @@ import com.cout970.magneticraft.Magneticraft
 import com.cout970.magneticraft.api.core.ITileRef
 import com.cout970.magneticraft.misc.*
 import com.cout970.magneticraft.misc.network.IBD
-import com.cout970.magneticraft.misc.vector.toVec3d
-import com.cout970.magneticraft.misc.vector.vec3Of
 import com.cout970.magneticraft.misc.world.isClient
 import com.cout970.magneticraft.systems.network.MessageTileUpdate
-import com.cout970.vector.extensions.distanceSq
 import net.minecraft.block.state.IBlockState
 import net.minecraft.entity.player.EntityPlayerMP
 import net.minecraft.init.Blocks

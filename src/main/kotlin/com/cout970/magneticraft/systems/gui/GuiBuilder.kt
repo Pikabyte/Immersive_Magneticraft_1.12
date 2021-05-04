@@ -12,7 +12,6 @@ import com.cout970.magneticraft.misc.inventory.InventoryRegion
 import com.cout970.magneticraft.misc.network.IBD
 import com.cout970.magneticraft.misc.vector.Vec2d
 import com.cout970.magneticraft.misc.vector.vec2Of
-import com.cout970.magneticraft.systems.config.Config
 import com.cout970.magneticraft.systems.gui.components.*
 import com.cout970.magneticraft.systems.gui.components.bars.*
 import com.cout970.magneticraft.systems.gui.components.buttons.ClickButton
@@ -29,8 +28,6 @@ import net.minecraft.util.math.BlockPos
 import net.minecraft.world.World
 import net.minecraftforge.energy.IEnergyStorage
 import net.minecraftforge.items.IItemHandler
-import java.text.DecimalFormat
-import java.text.DecimalFormatSymbols
 import kotlin.math.max
 
 enum class TankIO { IN, OUT, INOUT, NONE }
@@ -213,7 +210,7 @@ class DslBars(val config: GuiConfig) {
         barOf(
                 texture = vec2Of(45, 121),
                 value = { node.energy / node.capacity.toDouble() },
-                tooltip = { listOf(node.energy.format() + "J") },
+                tooltip = { listOf(node.energy.format() + "IF") },
                 icon = 0
         )
     }
@@ -221,7 +218,7 @@ class DslBars(val config: GuiConfig) {
     fun heatBar(node: IHeatNode) {
         barOf(
                 texture = vec2Of(34, 121),
-                value = { node.temperature / 4000.0 },
+                value = { node.temperature / 400.0 },
                 tooltip = { listOf(formatHeat(node.temperature)) },
                 icon = 2
         )
@@ -231,7 +228,7 @@ class DslBars(val config: GuiConfig) {
         barOf(
                 texture = vec2Of(57, 121),
                 value = { node.energyStored / node.maxEnergyStored.toDouble() },
-                tooltip = { listOf(node.energyStored.format() + "RF") },
+                tooltip = { listOf(node.energyStored.format() + " IF") },
                 icon = 8
         )
     }
@@ -244,7 +241,7 @@ class DslBars(val config: GuiConfig) {
         bar2Of(
                 texture = vec2Of(39, 176),
                 value = { va.storage / limit.toDouble() },
-                tooltip = { listOf(String.format("Consumption: %.2fW", va.storage)) },
+                tooltip = { listOf(String.format("Consumption: %.2f IF/t", va.storage)) },
                 icon = 5
         )
     }
@@ -285,7 +282,7 @@ class DslBars(val config: GuiConfig) {
         bar2Of(
                 texture = vec2Of(30, 176),
                 value = { va.storage / limit.toDouble() },
-                tooltip = { listOf(String.format("Production: %.2fW", va.storage)) },
+                tooltip = { listOf(String.format("Production: %.2f IF/t", va.storage)) },
                 icon = 4
         )
     }
@@ -512,7 +509,7 @@ class DslComponents(val config: GuiConfig) {
                 pos = posVec,
                 texture = vec2Of(45, 121),
                 value = { node.energy / node.capacity.toDouble() },
-                tooltip = { listOf(node.energy.format() + "J") },
+                tooltip = { listOf(node.energy.format() + " IF") },
                 icon = 0
         )
     }

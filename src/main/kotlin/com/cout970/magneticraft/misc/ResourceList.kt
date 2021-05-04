@@ -5,7 +5,6 @@ import com.cout970.magneticraft.Magneticraft
 import net.minecraft.util.ResourceLocation
 import java.io.File
 import java.io.IOException
-import java.util.*
 import java.util.zip.ZipEntry
 import java.util.zip.ZipFile
 

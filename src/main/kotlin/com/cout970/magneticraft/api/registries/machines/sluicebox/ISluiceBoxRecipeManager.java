@@ -1,12 +1,13 @@
 package com.cout970.magneticraft.api.registries.machines.sluicebox;
 
-import java.util.List;
 import kotlin.Deprecated;
 import kotlin.DeprecationLevel;
 import kotlin.Pair;
 import kotlin.collections.CollectionsKt;
 import net.minecraft.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 /**
  * Created by cout970 on 24/08/2016.

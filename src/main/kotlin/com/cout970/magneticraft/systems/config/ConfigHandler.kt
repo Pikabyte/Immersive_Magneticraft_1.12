@@ -6,7 +6,6 @@ import net.minecraftforge.common.MinecraftForge
 import net.minecraftforge.common.config.ConfigElement
 import net.minecraftforge.fml.client.config.IConfigElement
 import net.minecraftforge.fml.client.event.ConfigChangedEvent
-import net.minecraftforge.fml.common.FMLCommonHandler
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 import java.lang.reflect.Field
 
@@ -75,9 +74,6 @@ object ConfigHandler {
                     Boolean::class.java -> BooleanFieldWrapper(f, annotation)
                     String::class.java -> StringFieldWrapper(f, annotation)
                     Float::class.java -> FloatFieldWrapper(f, annotation)
-                    OreConfig::class.java -> OreConfigFieldWrapper(f, annotation)
-                    GaussOreConfig::class.java -> GaussOreConfigFieldWrapper(f, annotation)
-                    OilGenConfig::class.java -> OilGenConfigFieldWrapper(f, annotation)
                     else -> null
                 }?.let {
                     wrappers += it
@@ -90,11 +86,9 @@ object ConfigHandler {
         val cnf = config as ForgeConfiguration
         return listOf(
                 ConfigElement(cnf.getCategory(CATEGORY_GENERAL)),
-                ConfigElement(cnf.getCategory(CATEGORY_ORES)),
                 ConfigElement(cnf.getCategory(CATEGORY_ENERGY)),
                 ConfigElement(cnf.getCategory(CATEGORY_INSERTERS)),
                 ConfigElement(cnf.getCategory(CATEGORY_GUI)),
-                ConfigElement(cnf.getCategory(CATEGORY_PC)),
                 ConfigElement(cnf.getCategory(CATEGORY_MACHINES))
         )
     }
@@ -158,86 +152,6 @@ object ConfigHandler {
             val value = handler.config.getString(annotation.category, getKey(), field.get(handler.instance) as String,
                     annotation.comment)
             field.set(handler.instance, value)
-        }
-    }
-
-    class OreConfigFieldWrapper(field: Field, annotation: ConfigValue) : FieldWrapper(field, annotation,
-            ConfigValueType.ORE) {
-
-        override fun read(handler: ConfigHandler) {
-            val category = annotation.category + "." + getKey().replace("Ore", "")
-
-            val active = handler.config.getBoolean(category, "active",
-                    (field.get(handler.instance) as OreConfig).active,
-                    "If ${annotation.comment} should be generated or not")
-
-            val chunk = handler.config.getInteger(category, "chunkAmount",
-                    (field.get(handler.instance) as OreConfig).chunkAmount, "Amount of ${annotation.comment} per chunk")
-            val vein = handler.config.getInteger(category, "veinAmount",
-                    (field.get(handler.instance) as OreConfig).veinAmount, "Amount of ${annotation.comment} per vein")
-            val max = handler.config.getInteger(category, "maxLevel",
-                    (field.get(handler.instance) as OreConfig).maxLevel, "Max level to generate the ore")
-            val min = handler.config.getInteger(category, "minLevel",
-                    (field.get(handler.instance) as OreConfig).minLevel, "Min level to generate the ore")
-
-            field.set(handler.instance, OreConfig(chunk, vein, max, min, active))
-        }
-    }
-
-    class GaussOreConfigFieldWrapper(field: Field, annotation: ConfigValue) : FieldWrapper(field, annotation,
-            ConfigValueType.ORE) {
-        override fun read(handler: ConfigHandler) {
-            val category = annotation.category + "." + getKey().replace("Ore", "")
-
-            val active = handler.config.getBoolean(category, "active",
-                    (field.get(handler.instance) as GaussOreConfig).active,
-                    "If ${annotation.comment} should be generated or not")
-
-            val chunk = handler.config.getInteger(category, "chunkAmount",
-                    (field.get(handler.instance) as GaussOreConfig).chunkAmount,
-                    "Amount of ${annotation.comment} per chunk")
-            val vein = handler.config.getInteger(category, "veinAmount",
-                    (field.get(handler.instance) as GaussOreConfig).veinAmount,
-                    "Amount of ${annotation.comment} per vein")
-
-            val maxY = handler.config.getInteger(category, "maxLevel",
-                    (field.get(handler.instance) as GaussOreConfig).maxLevel, "Max level to generate the ore")
-            val minY = handler.config.getInteger(category, "minLevel",
-                    (field.get(handler.instance) as GaussOreConfig).minLevel, "Min level to generate the ore")
-
-            val minVeins = handler.config.getInteger(category, "minAmount",
-                    (field.get(handler.instance) as GaussOreConfig).minAmountPerChunk,
-                    "Min amount of veins of ore per chunk")
-            val maxVeins = handler.config.getInteger(category, "maxAmount",
-                    (field.get(handler.instance) as GaussOreConfig).maxAmountPerChunk,
-                    "Max amount of veins of ore per chunk")
-
-            val deviation = handler.config.getDouble(category, "deviation",
-                    (field.get(handler.instance) as GaussOreConfig).deviation.toDouble(),
-                    "Standard deviation of the amount of veins per chunk").toFloat()
-
-            field.set(handler.instance, GaussOreConfig(minVeins, maxVeins, deviation, chunk, vein, maxY, minY, active))
-        }
-    }
-
-    class OilGenConfigFieldWrapper(field: Field, annotation: ConfigValue) : FieldWrapper(field, annotation,
-            ConfigValueType.ORE) {
-        override fun read(handler: ConfigHandler) {
-            val category = annotation.category + "." + getKey().replace("Ore", "")
-
-            val active = handler.config.getBoolean(category, "active",
-                    (field.get(handler.instance) as OilGenConfig).active,
-                    "If ${annotation.comment} should be generated or not")
-
-            val probability = handler.config.getDouble(category, "probability",
-                    (field.get(handler.instance) as OilGenConfig).prob.toDouble(),
-                    "Probability of each block of oil to be generated")
-            val distance = handler.config.getInteger(category, "distance",
-                    (field.get(handler.instance) as OilGenConfig).distance,
-                    "Distance between oil deposits in multiples of 8")
-
-
-            field.set(handler.instance, OilGenConfig(probability.toFloat(), distance, active))
         }
     }
 }

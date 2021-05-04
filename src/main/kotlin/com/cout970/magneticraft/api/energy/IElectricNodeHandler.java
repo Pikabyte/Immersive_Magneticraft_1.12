@@ -1,9 +1,10 @@
 package com.cout970.magneticraft.api.energy;
 
 import com.cout970.magneticraft.api.core.INodeHandler;
-import java.util.List;
 import net.minecraft.util.EnumFacing;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 /**
  * Created by cout970 on 18/07/2016.

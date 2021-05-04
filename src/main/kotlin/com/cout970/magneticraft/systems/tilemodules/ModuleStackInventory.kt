@@ -7,7 +7,6 @@ import com.cout970.magneticraft.misc.network.SyncVariable
 import com.cout970.magneticraft.misc.newNbt
 import com.cout970.magneticraft.misc.world.dropItem
 import com.cout970.magneticraft.registry.ITEM_HANDLER
-import com.cout970.magneticraft.systems.config.Config
 import com.cout970.magneticraft.systems.gui.DATA_ID_ITEM_AMOUNT
 import com.cout970.magneticraft.systems.tileentities.IModule
 import com.cout970.magneticraft.systems.tileentities.IModuleContainer
@@ -33,7 +32,7 @@ class ModuleStackInventory(
     override fun onBreak() {
 
         if (stackType.isEmpty) return
-        var items = min(amount, Config.containerMaxItemDrops)
+        var items = amount
         while (items > 0) {
             val stackSize = min(items, stackType.maxStackSize)
             world.dropItem(stackType.withSize(stackSize), pos)

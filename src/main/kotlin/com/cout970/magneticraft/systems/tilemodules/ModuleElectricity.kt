@@ -221,7 +221,7 @@ class ModuleElectricity(
 
     override fun onBreak() {
         clearNormalConnections()
-        clearWireConnections()
+        //clearWireConnections()
 
         inputNormalConnections.removeAll { con ->
             val handler = getHandler(con.firstNode)

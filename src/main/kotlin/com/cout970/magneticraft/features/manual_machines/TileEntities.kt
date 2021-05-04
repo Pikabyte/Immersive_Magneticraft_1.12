@@ -10,7 +10,6 @@ import com.cout970.magneticraft.misc.vector.yd
 import com.cout970.magneticraft.misc.vector.zd
 import com.cout970.magneticraft.systems.tileentities.TileBase
 import com.cout970.magneticraft.systems.tilemodules.ModuleCrushingTable
-import com.cout970.magneticraft.systems.tilemodules.ModuleFabricator
 import com.cout970.magneticraft.systems.tilemodules.ModuleInventory
 import com.cout970.magneticraft.systems.tilemodules.ModuleSluiceBox
 import net.minecraft.util.EnumFacing
@@ -20,17 +19,6 @@ import net.minecraft.util.math.AxisAlignedBB
 /**
  * Created by cout970 on 2017/08/10.
  */
-
-@RegisterTileEntity("box")
-class TileBox : TileBase() {
-
-    val inventory = Inventory(27)
-    val invModule = ModuleInventory(inventory)
-
-    init {
-        initModules(invModule)
-    }
-}
 
 @RegisterTileEntity("crushing_table")
 class TileCrushingTable : TileBase() {
@@ -69,22 +57,5 @@ class TileSluiceBox : TileBase(), ITickable {
     override fun getRenderBoundingBox(): AxisAlignedBB {
         val dir = facing.toBlockPos()
         return super.getRenderBoundingBox().expand(dir.xd, dir.yd, dir.zd)
-    }
-}
-
-@RegisterTileEntity("fabricator")
-class TileFabricator : TileBase(), ITickable {
-    val inventory = Inventory(9)
-
-    val invModule = ModuleInventory(inventory)
-    val fabricatorModule = ModuleFabricator(inventory)
-
-    init {
-        initModules(invModule, fabricatorModule)
-    }
-
-    @DoNotRemove
-    override fun update() {
-        super.update()
     }
 }

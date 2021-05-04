@@ -40,22 +40,12 @@ object Blocks : IBlockMaker {
         "multiblock_orientation", MultiblockOrientation::class.java)
 
     lateinit var gap: BlockBase private set
-    lateinit var solarPanel: BlockBase private set
     lateinit var shelvingUnit: BlockBase private set
     lateinit var steamEngine: BlockBase private set
-    lateinit var grinder: BlockBase private set
     lateinit var sieve: BlockBase private set
-    lateinit var solarTower: BlockBase private set
-    lateinit var solarMirror: BlockBase private set
-    lateinit var container: BlockBase private set
-    lateinit var pumpjack: BlockBase private set
     lateinit var hydraulicPress: BlockBase private set
-    lateinit var oilHeater: BlockBase private set
-    lateinit var refinery: BlockBase private set
     lateinit var bigCombustionChamber: BlockBase private set
     lateinit var bigSteamBoiler: BlockBase private set
-    lateinit var steamTurbine: BlockBase private set
-    lateinit var bigElectricFurnace: BlockBase private set
 
     override fun initBlocks(): List<Pair<Block, ItemBlock?>> {
         val builder = BlockBuilder().apply {
@@ -92,17 +82,6 @@ object Blocks : IBlockMaker {
             }
         }.build()
 
-        solarPanel = builder.withName("solar_panel").copy {
-            factory = factoryOf(::TileSolarPanel)
-            generateDefaultItemBlockModel = false
-            customModels = listOf(
-                "model" to resource("models/block/mcx/solar_panel.mcx")
-            )
-            onActivated = defaultOnActivated { MultiblockSolarPanel }
-            onBlockPlaced = Blocks::placeWithOrientation
-            pickBlock = CommonMethods::pickDefaultBlock
-        }.build()
-
         shelvingUnit = builder.withName("shelving_unit").copy {
             factory = factoryOf(::TileShelvingUnit)
             generateDefaultItemBlockModel = false
@@ -125,17 +104,6 @@ object Blocks : IBlockMaker {
             pickBlock = CommonMethods::pickDefaultBlock
         }.build()
 
-        grinder = builder.withName("grinder").copy {
-            factory = factoryOf(::TileGrinder)
-            generateDefaultItemBlockModel = false
-            customModels = listOf(
-                "model" to resource("models/block/gltf/grinder.gltf")
-            )
-            onActivated = defaultOnActivated { MultiblockGrinder }
-            onBlockPlaced = Blocks::placeWithOrientation
-            pickBlock = CommonMethods::pickDefaultBlock
-        }.build()
-
         sieve = builder.withName("sieve").copy {
             factory = factoryOf(::TileSieve)
             generateDefaultItemBlockModel = false
@@ -147,50 +115,6 @@ object Blocks : IBlockMaker {
             pickBlock = CommonMethods::pickDefaultBlock
         }.build()
 
-        solarTower = builder.withName("solar_tower").copy {
-            factory = factoryOf(::TileSolarTower)
-            generateDefaultItemBlockModel = false
-            customModels = listOf(
-                "model" to resource("models/block/mcx/solar_tower.mcx")
-            )
-            onActivated = defaultOnActivated { MultiblockSolarTower }
-            onBlockPlaced = Blocks::placeWithOrientation
-            pickBlock = CommonMethods::pickDefaultBlock
-        }.build()
-
-        solarMirror = builder.withName("solar_mirror").copy {
-            factory = factoryOf(::TileSolarMirror)
-            generateDefaultItemBlockModel = false
-            customModels = listOf(
-                "model" to resource("models/block/mcx/solar_mirror.mcx")
-            )
-            onActivated = defaultOnActivated { MultiblockSolarMirror }
-            onBlockPlaced = Blocks::placeWithOrientation
-            pickBlock = CommonMethods::pickDefaultBlock
-        }.build()
-
-        container = builder.withName("container").copy {
-            factory = factoryOf(::TileContainer)
-            generateDefaultItemBlockModel = false
-            customModels = listOf(
-                "model" to resource("models/block/mcx/container.mcx")
-            )
-            onActivated = defaultOnActivated { MultiblockContainer }
-            onBlockPlaced = Blocks::placeWithOrientation
-            pickBlock = CommonMethods::pickDefaultBlock
-        }.build()
-
-        pumpjack = builder.withName("pumpjack").copy {
-            factory = factoryOf(::TilePumpjack)
-            generateDefaultItemBlockModel = false
-            customModels = listOf(
-                "model" to resource("models/block/mcx/pumpjack.mcx")
-            )
-            onActivated = defaultOnActivated { MultiblockPumpjack }
-            onBlockPlaced = Blocks::placeWithOrientation
-            pickBlock = CommonMethods::pickDefaultBlock
-        }.build()
-
         hydraulicPress = builder.withName("hydraulic_press").copy {
             factory = factoryOf(::TileHydraulicPress)
             generateDefaultItemBlockModel = false
@@ -198,28 +122,6 @@ object Blocks : IBlockMaker {
                 "model" to resource("models/block/gltf/hydraulic_press.gltf")
             )
             onActivated = defaultOnActivated { MultiblockHydraulicPress }
-            onBlockPlaced = Blocks::placeWithOrientation
-            pickBlock = CommonMethods::pickDefaultBlock
-        }.build()
-
-        oilHeater = builder.withName("oil_heater").copy {
-            factory = factoryOf(::TileOilHeater)
-            generateDefaultItemBlockModel = false
-            customModels = listOf(
-                "model" to resource("models/block/mcx/oil_heater.mcx")
-            )
-            onActivated = defaultOnActivated { MultiblockOilHeater }
-            onBlockPlaced = Blocks::placeWithOrientation
-            pickBlock = CommonMethods::pickDefaultBlock
-        }.build()
-
-        refinery = builder.withName("refinery").copy {
-            factory = factoryOf(::TileRefinery)
-            generateDefaultItemBlockModel = false
-            customModels = listOf(
-                "model" to resource("models/block/mcx/refinery.mcx")
-            )
-            onActivated = defaultOnActivated { MultiblockRefinery }
             onBlockPlaced = Blocks::placeWithOrientation
             pickBlock = CommonMethods::pickDefaultBlock
         }.build()
@@ -246,32 +148,8 @@ object Blocks : IBlockMaker {
             pickBlock = CommonMethods::pickDefaultBlock
         }.build()
 
-        steamTurbine = builder.withName("steam_turbine").copy {
-            factory = factoryOf(::TileSteamTurbine)
-            generateDefaultItemBlockModel = false
-            customModels = listOf(
-                "model" to resource("models/block/gltf/steam_turbine.gltf")
-            )
-            onActivated = defaultOnActivated { MultiblockSteamTurbine }
-            onBlockPlaced = Blocks::placeWithOrientation
-            pickBlock = CommonMethods::pickDefaultBlock
-        }.build()
-
-        bigElectricFurnace = builder.withName("big_electric_furnace").copy {
-            factory = factoryOf(::TileBigElectricFurnace)
-            generateDefaultItemBlockModel = false
-            customModels = listOf(
-                "model" to resource("models/block/gltf/big_electric_furnace.gltf")
-            )
-            onActivated = defaultOnActivated { MultiblockBigElectricFurnace }
-            onBlockPlaced = Blocks::placeWithOrientation
-            pickBlock = CommonMethods::pickDefaultBlock
-        }.build()
-
         return itemBlockListOf(
-            solarPanel, shelvingUnit, steamEngine, grinder, sieve, solarTower, solarMirror,
-            container, pumpjack, hydraulicPress, oilHeater, refinery, bigCombustionChamber,
-            bigSteamBoiler, steamTurbine, bigElectricFurnace
+            shelvingUnit, steamEngine, sieve, hydraulicPress, bigCombustionChamber, bigSteamBoiler
         ) + blockListOf(gap)
     }
 

@@ -2,12 +2,10 @@ package com.cout970.magneticraft.systems.tilemodules
 
 import com.cout970.magneticraft.AABB
 import com.cout970.magneticraft.IVector3
-import com.cout970.magneticraft.api.MagneticraftApi
 import com.cout970.magneticraft.api.heat.IHeatNode
 import com.cout970.magneticraft.misc.ConversionTable
 import com.cout970.magneticraft.misc.STANDARD_AMBIENT_TEMPERATURE
 import com.cout970.magneticraft.misc.add
-import com.cout970.magneticraft.misc.fluid.Tank
 import com.cout970.magneticraft.misc.inventory.Inventory
 import com.cout970.magneticraft.misc.inventory.get
 import com.cout970.magneticraft.misc.network.IntSyncVariable
@@ -16,6 +14,7 @@ import com.cout970.magneticraft.misc.newNbt
 import com.cout970.magneticraft.misc.tileentity.WorkingIndicator
 import com.cout970.magneticraft.misc.vector.*
 import com.cout970.magneticraft.misc.world.isClient
+import com.cout970.magneticraft.misc.world.isServer
 import com.cout970.magneticraft.systems.config.Config
 import com.cout970.magneticraft.systems.gui.DATA_ID_BURNING_TIME
 import com.cout970.magneticraft.systems.gui.DATA_ID_MAX_BURNING_TIME
@@ -27,13 +26,11 @@ import net.minecraft.tileentity.TileEntityFurnace
 import net.minecraft.util.EnumFacing
 import net.minecraft.util.EnumParticleTypes
 import net.minecraft.world.World
-import kotlin.math.roundToInt
 
 class ModuleBigCombustionChamber(
     val facing: () -> EnumFacing,
     val heatNode: IHeatNode,
     val inventory: Inventory,
-    val tank: Tank,
     val maxHeat: Double,
     override val name: String = "module_big_combustion_chamber"
 ) : IModule {
@@ -57,7 +54,7 @@ class ModuleBigCombustionChamber(
                 if (heatNode.temperature < maxHeat) {
                     val speed = Config.bigCombustionChamberMaxSpeed.toInt()
                     burningTime += speed
-                    heatNode.applyHeat(speed * burningPower)
+                    heatNode.applyHeat(2 * speed * burningPower)
                     working.onWork()
                 }
             }
@@ -74,15 +71,15 @@ class ModuleBigCombustionChamber(
     }
 
     fun spawnParticles() {
-        if (working() && Config.enableMachineParticles == 1) {
-            val flameLocalArea = AABB((-8).px, 2.px, 12.px, 24.px, 14.px, 16.px)
-            val flameArea = facing().rotateBox(pos.toVec3d() + vec3Of(0.5), flameLocalArea.offset(pos))
-            world.spawnParticles(EnumParticleTypes.FLAME, flameArea, 2, vec3Of(0, 0.005, 0), 0.01f)
+        if (world.isServer || !working.working) return
 
-            val smokeLocalArea = AABB(4.px, 30.px, (-36).px, 12.px, 32.px, (-44).px)
-            val smokeArea = facing().rotateBox(pos.toVec3d() + vec3Of(0.5), smokeLocalArea.offset(pos))
-            world.spawnParticles(EnumParticleTypes.SMOKE_LARGE, smokeArea, 2, vec3Of(0, 0.01, 0), 0.0025f)
-        }
+        val flameLocalArea = AABB((-8).px, 2.px, 12.px, 24.px, 14.px, 16.px)
+        val flameArea = facing().rotateBox(pos.toVec3d() + vec3Of(0.5), flameLocalArea.offset(pos))
+        world.spawnParticles(EnumParticleTypes.FLAME, flameArea, 2, vec3Of(0, 0.005, 0), 0.01f)
+
+        val smokeLocalArea = AABB(4.px, 30.px, (-36).px, 12.px, 32.px, (-44).px)
+        val smokeArea = facing().rotateBox(pos.toVec3d() + vec3Of(0.5), smokeLocalArea.offset(pos))
+        world.spawnParticles(EnumParticleTypes.SMOKE_LARGE, smokeArea, 2, vec3Of(0, 0.01, 0), 0.0025f)
     }
 
     fun World.spawnParticles(particle: EnumParticleTypes, area: AABB, amount: Int, direction: IVector3, variability: Float) {
@@ -106,7 +103,7 @@ class ModuleBigCombustionChamber(
 
     fun AABB.size() = vec3Of(maxX - minX, maxY - minY, maxZ - minZ)
 
-    fun consumeFuel(): Boolean = burnSolidFuel() || burnLiquidFuel()
+    fun consumeFuel(): Boolean = burnSolidFuel()
 
     fun burnSolidFuel(): Boolean {
         val stack = inventory[0]
@@ -119,21 +116,6 @@ class ModuleBigCombustionChamber(
             return true
         }
         return false
-    }
-
-    fun burnLiquidFuel(): Boolean {
-        val fluid = tank.fluid ?: return false
-
-        val fluidAmount = tank.fluidAmount.coerceAtMost(100)
-        if (fluidAmount <= 0) return false
-
-        val fuel = MagneticraftApi.getFluidFuelManager().findFuel(fluid) ?: return false
-        val fraction = (fluidAmount * fuel.totalBurningTime / 1000f).roundToInt()
-        if (fraction <= 0) return false
-        tank.drain(fluidAmount, true)
-        burningPower = fuel.powerPerCycle
-        maxBurningTime = fraction
-        return true
     }
 
     override fun serializeNBT(): NBTTagCompound = newNbt {

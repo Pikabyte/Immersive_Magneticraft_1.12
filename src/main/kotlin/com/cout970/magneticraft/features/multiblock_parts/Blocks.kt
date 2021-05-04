@@ -30,7 +30,6 @@ object Blocks : IBlockMaker {
 
     lateinit var parts: BlockBase private set
     lateinit var column: BlockBase private set
-    lateinit var pumpjackDrill: BlockBase private set
 
     override fun initBlocks(): List<Pair<Block, ItemBlock>> {
         val builder = BlockBuilder().apply {
@@ -48,18 +47,13 @@ object Blocks : IBlockMaker {
             onBlockPlaced = { it.defaultValue.withProperty(PROPERTY_COLUMN_AXIS, it.facing.axis.toColumnAxis()) }
         }.build()
 
-        pumpjackDrill = builder.withName("pumpjack_drill").copy {
-            onDrop = { emptyList() }
-        }.build()
-
-        return itemBlockListOf(parts, column, pumpjackDrill)
+        return itemBlockListOf(parts, column)
     }
 
     enum class PartType(override val stateName: String,
                         override val isVisible: Boolean) : IStatesEnum, IStringSerializable {
 
         BASE("base", true),
-        ELECTRIC("electric", true),
         GRATE("grate", true),
         STRIPED("striped", true),
         COPPER_COIL("copper_coil", true),

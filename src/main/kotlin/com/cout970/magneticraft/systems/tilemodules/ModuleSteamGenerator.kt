@@ -25,8 +25,8 @@ class ModuleSteamGenerator(
     override lateinit var container: IModuleContainer
 
     companion object {
-        const val STEAM_PER_OPERATION = 10
-        const val ENERGY_PER_OPERATION = (STEAM_PER_OPERATION * ConversionTable.STEAM_TO_J).toInt()
+        const val STEAM_PER_OPERATION = 4
+        const val ENERGY_PER_OPERATION = (2.5 * STEAM_PER_OPERATION * ConversionTable.STEAM_TO_J).toInt()
     }
 
     val production = ValueAverage()

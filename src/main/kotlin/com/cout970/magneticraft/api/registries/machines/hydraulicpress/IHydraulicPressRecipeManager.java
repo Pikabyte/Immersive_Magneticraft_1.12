@@ -1,7 +1,8 @@
 package com.cout970.magneticraft.api.registries.machines.hydraulicpress;
 
-import java.util.List;
 import net.minecraft.item.ItemStack;
+
+import java.util.List;
 
 /**
  * Created by cout970 on 22/08/2016.

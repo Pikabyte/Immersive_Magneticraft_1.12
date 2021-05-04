@@ -30,22 +30,12 @@ object MultiblockManager : IMultiblockManager {
         ?: error("Unregistered $MOD_ID Multiblock: $name, Please contact with the author")
 
     fun registerDefaults() {
-        registerMultiblock(MultiblockSolarPanel)
         registerMultiblock(MultiblockShelvingUnit)
         registerMultiblock(MultiblockSteamEngine)
-        registerMultiblock(MultiblockGrinder)
         registerMultiblock(MultiblockSieve)
-        registerMultiblock(MultiblockSolarTower)
-        registerMultiblock(MultiblockSolarMirror)
-        registerMultiblock(MultiblockContainer)
-        registerMultiblock(MultiblockPumpjack)
         registerMultiblock(MultiblockHydraulicPress)
-        registerMultiblock(MultiblockOilHeater)
-        registerMultiblock(MultiblockRefinery)
         registerMultiblock(MultiblockBigCombustionChamber)
         registerMultiblock(MultiblockBigSteamBoiler)
-        registerMultiblock(MultiblockSteamTurbine)
-        registerMultiblock(MultiblockBigElectricFurnace)
     }
 
     override fun getRegisteredMultiblocks(): MutableMap<String, IMultiblock> = multiblocks.toMutableMap()

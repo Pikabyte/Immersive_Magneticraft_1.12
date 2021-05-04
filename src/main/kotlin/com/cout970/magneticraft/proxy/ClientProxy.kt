@@ -6,11 +6,8 @@ import com.cout970.magneticraft.MOD_ID
 import com.cout970.magneticraft.Magneticraft
 import com.cout970.magneticraft.misc.*
 import com.cout970.magneticraft.registry.blocks
-import com.cout970.magneticraft.registry.items
 import com.cout970.magneticraft.registry.registerSounds
 import com.cout970.magneticraft.systems.blocks.BlockBase
-import com.cout970.magneticraft.systems.gui.components.CompBookRenderer
-import com.cout970.magneticraft.systems.items.ItemBase
 import com.cout970.magneticraft.systems.tileentities.TileBase
 import com.cout970.magneticraft.systems.tilerenderers.TileRenderer
 import com.cout970.modelloader.api.DefaultBlockDecorator
@@ -44,9 +41,6 @@ class ClientProxy : CommonProxy() {
     override fun postItemRegister() {
         super.postItemRegister()
 
-        //Item renders
-        logTime("Task registerItemModels:") { registerItemModels() }
-
         //ItemBlock renders
         logTime("Task registerBlockAndItemBlockModels:") { registerBlockAndItemBlockModels() }
 
@@ -59,31 +53,6 @@ class ClientProxy : CommonProxy() {
 
         //Model loaders
         OBJLoader.INSTANCE.addDomain(MOD_ID)
-
-        // Preload guidebook
-        logTime("Task loadGuideBookPages:") { CompBookRenderer.book }
-    }
-
-    fun registerItemModels() {
-        items.forEach { i ->
-            (i as? ItemBase)?.let { item ->
-                item.variants.forEach { variant ->
-                    ModelLoader.setCustomModelResourceLocation(
-                        item,
-                        variant.key,
-                        item.registryName!!.toModel(variant.value)
-                    )
-                }
-
-                item.customModels.forEach { (state, location) ->
-                    ModelLoaderApi.registerModelWithDecorator(
-                        ModelResourceLocation(item.registryName!!, state),
-                        location,
-                        DefaultBlockDecorator
-                    )
-                }
-            }
-        }
     }
 
     fun registerBlockAndItemBlockModels() {

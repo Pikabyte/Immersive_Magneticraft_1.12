@@ -46,11 +46,6 @@ fun Multiblock.strippedBlock(): SingleBlockComponent {
     return SingleBlockComponent(block, Multiblocks.gap.defaultState)
 }
 
-fun Multiblock.electricBlock(): SingleBlockComponent {
-    val block = MultiblockParts.PartType.ELECTRIC.getBlockState(MultiblockParts.parts)
-    return SingleBlockComponent(block, Multiblocks.gap.defaultState)
-}
-
 fun Multiblock.columnBlock(dir: EnumFacing): ContextBlockComponent {
     val block = MultiblockParts.column
     return ContextBlockComponent(

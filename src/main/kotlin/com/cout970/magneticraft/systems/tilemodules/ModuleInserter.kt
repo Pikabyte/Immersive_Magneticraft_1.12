@@ -1,6 +1,5 @@
 package com.cout970.magneticraft.systems.tilemodules
 
-import com.cout970.magneticraft.features.items.Upgrades
 import com.cout970.magneticraft.misc.add
 import com.cout970.magneticraft.misc.decodeFlags
 import com.cout970.magneticraft.misc.encodeFlags
@@ -77,8 +76,8 @@ class ModuleInserter(
     var useMetadata = true
     var useNbt = true
 
-    val delay: Float get() = if (hasSpeedUpgrade) Config.inserterUpgradedDelay else Config.inserterDefaultDelay
-    val maxStackSize: Int get() = if (hasStackUpgrade) Config.inserterUpgradedStackSize else Config.inserterDefaultStackSize
+    val delay: Float get() = Config.inserterDefaultDelay
+    val maxStackSize: Int get() = Config.inserterDefaultStackSize
     val moving: Boolean get() = state == State.TRANSITION
 
     var state = State.CONTRACTED
@@ -94,10 +93,6 @@ class ModuleInserter(
             inventory[0] = i
         }
     //@formatter:on
-
-    override fun init() {
-        updateUpgrades()
-    }
 
     override fun update() {
 
@@ -180,29 +175,6 @@ class ModuleInserter(
     fun sleep() {
         sleep = delay.toInt()
         container.sendUpdateToNearPlayers()
-    }
-
-    fun updateUpgrades() {
-
-        hasSpeedUpgrade = false
-        hasStackUpgrade = false
-
-        for (i in 1..2) {
-            val stack = inventory[i]
-            if (stack.isEmpty || stack.item != Upgrades.inserterUpgrade) continue
-
-            when (stack.metadata) {
-                0 -> hasSpeedUpgrade = true
-                1 -> hasStackUpgrade = true
-            }
-        }
-
-        if (Config.infiniteInserterStackUpgrades) {
-            hasStackUpgrade = true
-        }
-        if (Config.infiniteInserterSpeedUpgrades) {
-            hasSpeedUpgrade = true
-        }
     }
 
     fun shouldGrabItems() = currentItem.isEmpty

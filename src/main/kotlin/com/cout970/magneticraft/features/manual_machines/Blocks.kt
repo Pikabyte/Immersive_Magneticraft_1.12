@@ -25,22 +25,14 @@ import net.minecraft.util.math.BlockPos
 @RegisterBlocks
 object Blocks : IBlockMaker {
 
-    lateinit var box: BlockBase private set
     lateinit var crushingTable: BlockBase private set
     lateinit var sluiceBox: BlockBase private set
-    lateinit var fabricator: BlockBase private set
 
     override fun initBlocks(): List<Pair<Block, ItemBlock>> {
         val builder = BlockBuilder().apply {
             material = Material.IRON
             creativeTab = CreativeTabMg
         }
-
-        box = builder.withName("box").copy {
-            material = Material.WOOD
-            factory = factoryOf(::TileBox)
-            onActivated = CommonMethods::openGui
-        }.build()
 
         crushingTable = builder.withName("crushing_table").copy {
             factory = factoryOf(::TileCrushingTable)
@@ -92,11 +84,6 @@ object Blocks : IBlockMaker {
             }
         }.build()
 
-        fabricator = builder.withName("fabricator").copy {
-            factory = factoryOf(::TileFabricator)
-            onActivated = CommonMethods::openGui
-        }.build()
-
-        return itemBlockListOf(box, crushingTable, sluiceBox, fabricator)
+        return itemBlockListOf(crushingTable, sluiceBox)
     }
 }

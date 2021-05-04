@@ -1,9 +1,10 @@
 package com.cout970.magneticraft.api.heat;
 
 import com.cout970.magneticraft.api.core.INodeHandler;
-import java.util.List;
 import net.minecraft.util.EnumFacing;
 import org.jetbrains.annotations.NotNull;
+
+import java.util.List;
 
 /**
  * Created by Yurgen on 19/10/2016. Modified by Cout970 on 14/5/2018

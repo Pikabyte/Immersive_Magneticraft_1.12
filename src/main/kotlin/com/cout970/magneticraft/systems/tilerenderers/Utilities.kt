@@ -7,7 +7,6 @@ import com.cout970.magneticraft.misc.fromCelsiusToKelvin
 import com.cout970.magneticraft.misc.get
 import com.cout970.magneticraft.misc.inventory.isNotEmpty
 import com.cout970.magneticraft.misc.resource
-import com.cout970.magneticraft.misc.split
 import com.cout970.magneticraft.misc.vector.*
 import com.cout970.magneticraft.systems.blocks.BlockMultiblock
 import com.cout970.magneticraft.systems.multiblocks.IMultiblockModule
@@ -492,10 +491,6 @@ object Utilities {
                 (color and 0xFF) / 255f,
                 ((color ushr 24) and 0xFF) / 255f
         )
-    }
-
-    fun getColorComponent(color: Int, component: Int): Float {
-        return (color.split(component).toInt() and 0xFF) / 255f
     }
 
 

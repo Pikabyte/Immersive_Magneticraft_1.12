@@ -9,14 +9,12 @@ import com.cout970.magneticraft.systems.multiblocks.MultiblockManager
 import com.cout970.magneticraft.systems.network.MessageContainerUpdate
 import com.cout970.magneticraft.systems.network.MessageGuiUpdate
 import com.cout970.magneticraft.systems.network.MessageTileUpdate
-import com.cout970.magneticraft.systems.worldgen.WorldGenerator
 import net.minecraft.block.Block
 import net.minecraft.item.Item
 import net.minecraftforge.common.MinecraftForge
 import net.minecraftforge.event.RegistryEvent
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 import net.minecraftforge.fml.common.network.NetworkRegistry
-import net.minecraftforge.fml.common.registry.GameRegistry
 import net.minecraftforge.fml.relauncher.Side
 
 /**
@@ -43,9 +41,6 @@ abstract class CommonProxy {
         // @formatter:off
         logTime("Task registerCapabilities:")         { registerCapabilities() }
         logTime("Task initTileEntities:")             { initTileEntities() }
-        logTime("Task initFluids:")                   { initFluids() }
-        logTime("Task registerOreDictionaryEntries:") { registerOreDictionaryEntries() }
-        logTime("Task registerOreGenerations:")       { registerOreGenerations() }
         logTime("Task registerMultiblocks:")          { MultiblockManager.registerDefaults() }
         // @formatter:on
     }
@@ -63,12 +58,6 @@ abstract class CommonProxy {
 
         logTime("Task registerMisc:") {
             registerMisc()
-        }
-
-        //World generator
-        logTime("Task registerWorldGenerator:") {
-            WorldGenerator.init()
-            GameRegistry.registerWorldGenerator(WorldGenerator, 10)
         }
 
         //Gui

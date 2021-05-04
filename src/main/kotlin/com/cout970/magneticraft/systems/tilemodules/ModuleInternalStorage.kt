@@ -23,7 +23,7 @@ import net.minecraft.nbt.NBTTagCompound
 class ModuleInternalStorage(
     val mainNode: IElectricNode,
     val capacity: Int,
-    val maxChargeSpeed: Double = 200.0,
+    val maxChargeSpeed: Double = 4000.0,
     val upperVoltageLimit: Double = ElectricConstants.TIER_1_MACHINES_MIN_VOLTAGE,
     val lowerVoltageLimit: Double = ElectricConstants.TIER_1_MACHINES_MIN_VOLTAGE,
     override val name: String = "module_electric_storage"

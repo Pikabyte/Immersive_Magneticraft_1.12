@@ -1,6 +1,5 @@
 package com.cout970.magneticraft.features.multiblocks.tilerenderers
 
-import com.cout970.magneticraft.features.multiblocks.tileentities.TileContainer
 import com.cout970.magneticraft.features.multiblocks.tileentities.TileShelvingUnit
 import com.cout970.magneticraft.misc.RegisterRenderer
 import com.cout970.magneticraft.systems.tilemodules.ModuleShelvingUnitMb
@@ -29,19 +28,5 @@ object TileRendererShelvingUnit : TileRendererMultiblock<TileShelvingUnit>() {
                 renderModel(crateMap[crate])
             }
         }
-    }
-}
-
-@RegisterRenderer(TileContainer::class)
-object TileRendererContainer : TileRendererMultiblock<TileContainer>() {
-
-    override fun init() {
-        createModel(Multiblocks.container)
-    }
-
-    override fun render(te: TileContainer) {
-        Utilities.rotateFromCenter(te.facing, 0f)
-        translate(0, 0, -3)
-        renderModel("default")
     }
 }

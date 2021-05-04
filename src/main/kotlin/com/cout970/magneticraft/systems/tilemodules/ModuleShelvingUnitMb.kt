@@ -27,8 +27,6 @@ import net.minecraft.util.EnumFacing
 import net.minecraft.util.math.BlockPos
 import net.minecraftforge.common.capabilities.Capability
 import java.util.*
-import kotlin.Comparator
-import kotlin.collections.HashSet
 
 /**
  * Created by cout970 on 2017/07/05.

@@ -66,7 +66,7 @@ class TransferRateBar(
                 value.invoke() < 0 -> TextFormatting.DARK_RED.toString()
                 else -> TextFormatting.WHITE.toString()
             }
-            val list = listOf(String.format("%s%.2fW", color, value.invoke()))
+            val list = listOf(String.format("%s%.2fIF/t", color, value.invoke()))
             gui.drawHoveringText(list, mouse)
         }
     }

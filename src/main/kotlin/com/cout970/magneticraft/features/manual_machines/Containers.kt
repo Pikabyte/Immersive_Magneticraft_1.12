@@ -1,7 +1,6 @@
 package com.cout970.magneticraft.features.manual_machines
 
 import com.cout970.magneticraft.misc.inventory.Inventory
-import com.cout970.magneticraft.misc.inventory.get
 import com.cout970.magneticraft.misc.network.IBD
 import com.cout970.magneticraft.systems.gui.AutoContainer
 import com.cout970.magneticraft.systems.gui.GuiBuilder
@@ -22,11 +21,6 @@ class ContainerFabricator(builder: GuiBuilder, configFunc: (AutoContainer) -> Un
             val input = CompressedStreamTools.readCompressed(array.inputStream())
             val inv = Inventory(9)
             inv.deserializeNBT(input)
-
-            val grid = (tileEntity as TileFabricator).fabricatorModule.recipeGrid
-            repeat(9) { slot ->
-                grid.setInventorySlotContents(slot, inv[slot])
-            }
         }
     }
 }

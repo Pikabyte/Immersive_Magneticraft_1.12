@@ -1,6 +1,6 @@
 package com.cout970.magneticraft.misc
 
-import com.cout970.magneticraft.features.items.CraftingItems
+import com.cout970.magneticraft.features.manual_machines.Blocks
 import net.minecraft.creativetab.CreativeTabs
 import net.minecraft.item.ItemStack
 import net.minecraftforge.fml.relauncher.Side
@@ -17,5 +17,5 @@ object CreativeTabMg : CreativeTabs("magneticraft") {
         return t("itemGroup." + this.tabLabel)
     }
 
-    override fun getTabIconItem(): ItemStack = ItemStack(CraftingItems.guideBook)
+    override fun getTabIconItem(): ItemStack = ItemStack(Blocks.crushingTable)
 }

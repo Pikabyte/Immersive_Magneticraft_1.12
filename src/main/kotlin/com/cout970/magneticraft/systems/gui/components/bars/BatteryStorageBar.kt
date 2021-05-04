@@ -34,7 +34,7 @@ class BatteryStorageBar(val parent: GuiBase, val texture: ResourceLocation,
     override fun drawSecondLayer(mouse: Vec2d) {
         if (mouse in (pos to size)) {
             val numberFormat = DecimalFormat("#,###")
-            gui.drawHoveringText(listOf("${numberFormat.format(storageModule.energy)}J"), mouse)
+            gui.drawHoveringText(listOf("${numberFormat.format(storageModule.energy)}IF"), mouse)
         }
     }
 }

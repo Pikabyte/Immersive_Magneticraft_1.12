@@ -5,8 +5,6 @@ import com.cout970.magneticraft.misc.logError
 import com.cout970.magneticraft.misc.toTextComponent
 import com.cout970.magneticraft.proxy.ClientProxy
 import com.cout970.magneticraft.registry.blocks
-import com.cout970.magneticraft.registry.items
-import com.cout970.magneticraft.systems.items.ItemBase
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonArray
 import com.google.gson.JsonObject
@@ -104,7 +102,6 @@ object Debug {
     fun printBlockWithoutRecipe() {
 
         val allBlocks = blocks.map { it.first }.toMutableSet()
-        val allItems = items.flatMap { item -> (item as ItemBase).variants.map { item to it.key } }.toMutableSet()
 
         CraftingManager.REGISTRY.filterIsInstance<IRecipe>().forEach { it ->
             val stack = it.recipeOutput
@@ -119,12 +116,6 @@ object Debug {
                 (ing as? OreIngredient)?.matchingStacks?.isNotEmpty() ?: true
             }
 
-            if (valid) {
-                allItems.remove(pair)
-            } else if (pair in allItems) {
-                println("Invalid recipe for: ${item.registryName}")
-            }
-
             if (item is ItemBlock) {
                 if (valid) {
                     allBlocks.remove(item.block)
@@ -132,13 +123,6 @@ object Debug {
                     println("Invalid recipe for: ${item.registryName}")
                 }
             }
-        }
-
-        if (allItems.isNotEmpty()) {
-            println("==========================================")
-            println("Items without crafting recipe: ")
-            allItems.forEach { println("- $it") }
-            println("==========================================")
         }
 
         if (allBlocks.isNotEmpty()) {

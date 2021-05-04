@@ -1,8 +1,9 @@
 package com.cout970.magneticraft.api.registries.machines.sifter;
 
-import java.util.List;
 import net.minecraft.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 /**
  * Created by cout970 on 24/08/2016.
