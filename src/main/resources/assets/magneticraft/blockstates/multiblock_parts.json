@@ -44,15 +44,10 @@
             }
         }],
         "corrugated_iron": [{
-            "model": "cube",
+            "model": "cube_column",
             "textures": {
-                "particle": "magneticraft:blocks/multiblock_parts/corrugated_iron",
-                "down": "magneticraft:blocks/multiblock_parts/corrugated_iron",
-                "up": "magneticraft:blocks/multiblock_parts/corrugated_iron",
-                "north": "magneticraft:blocks/multiblock_parts/corrugated_iron_side",
-                "east": "magneticraft:blocks/multiblock_parts/corrugated_iron_side",
-                "south": "magneticraft:blocks/multiblock_parts/corrugated_iron_side",
-                "west": "magneticraft:blocks/multiblock_parts/corrugated_iron_side"
+                "end": "magneticraft:blocks/multiblock_parts/column_end",
+                "side": "magneticraft:blocks/multiblock_parts/column_side"
             }
         }]
     }

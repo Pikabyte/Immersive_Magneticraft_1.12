@@ -26,38 +26,39 @@ object MultiblockSteamEngine : Multiblock() {
 
     init {
         val I = IgnoreBlockComponent
-        val C = columnBlock(EnumFacing.UP)
+        val L = lightEngineeringBlock()
         val B = ofBlock(Blocks.BRICK_BLOCK)
-        val V = copperCoilBlock()
-        val G = grateBlock()
-        val N = baseBlock()
-        val O = corrugatedIronBlock()
+        val V = dynamoBlock()
+        val H = heavyEngineeringBlock()
+        val F = fenceSteelBlock()
+        val S = scaffoldingSteelBlock()
+        val Q = barrelIronBlock()
         val M = mainBlockOf(controllerBlock)
 
         scheme = yLayers(
             zLayers(
-                listOf(N, I, I), // y = 2
-                listOf(N, I, I),
-                listOf(N, I, I),
+                listOf(F, I, I), // y = 2
+                listOf(S, I, I),
+                listOf(F, I, I),
                 listOf(I, I, I)),
 
             zLayers(
-                listOf(O, I, I), // y = 1
-                listOf(C, I, I),
-                listOf(G, G, I),
-                listOf(I, G, I)),
+                listOf(Q, I, I), // y = 1
+                listOf(S, I, I),
+                listOf(F, L, I),
+                listOf(I, L, I)),
 
             zLayers(
                 listOf(M, I, I), // y = 0
                 listOf(B, I, I),
-                listOf(B, G, V),
-                listOf(B, G, C)),
+                listOf(B, L, V),
+                listOf(B, L, H)),
 
             zLayers(
                 listOf(I, I, I), // y = -1
                 listOf(I, I, I),
-                listOf(I, G, I),
-                listOf(I, G, I))
+                listOf(I, L, I),
+                listOf(I, L, I))
         )
     }
 

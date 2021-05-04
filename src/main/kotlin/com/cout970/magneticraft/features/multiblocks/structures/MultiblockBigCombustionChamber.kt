@@ -24,20 +24,21 @@ object MultiblockBigCombustionChamber : Multiblock() {
 
     init {
         val A = IgnoreBlockComponent
-        val C = corrugatedIronBlock()
+        val C = corrugatedBlock()
+        val L = lightEngineeringBlock()
         val B = ofBlock(Blocks.BRICK_BLOCK)
         val M = mainBlockOf(controllerBlock)
 
         scheme = Multiblock.yLayers(
             Multiblock.zLayers(
                 listOf(B, B, B), // y = 1
-                listOf(B, B, B),
+                listOf(B, L, B),
                 listOf(B, B, B),
                 listOf(A, C, A)),
 
             Multiblock.zLayers(
                 listOf(B, M, B), // y = 0
-                listOf(B, B, B),
+                listOf(L, L, L),
                 listOf(B, B, B),
                 listOf(A, C, A))
         )

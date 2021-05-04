@@ -20,30 +20,32 @@ object MultiblockBigSteamBoiler : Multiblock() {
     override val center: BlockPos = BlockPos(1, 0, 0)
 
     init {
-        val H = baseBlock()
-        val I = corrugatedIronBlock()
+        val A = IgnoreBlockComponent
+        val S = sheetmetalIronBlock()
+        val C = scaffoldingSteelBlock()
+        val Q = sheetmetalSteelBlock()
         val M = mainBlockOf(controllerBlock)
 
         scheme = yLayers(
             zLayers(
-                listOf(I, I, I), // y = 3
-                listOf(I, I, I),
-                listOf(I, I, I)),
+                 listOf(S, S, S), // y = 3
+                 listOf(S, S, S),
+                 listOf(S, S, S)),
 
             zLayers(
-                listOf(I, I, I), // y = 2
-                listOf(I, I, I),
-                listOf(I, I, I)),
+                listOf(S, S, S), // y = 2
+                listOf(S, A, S),
+                listOf(S, S, S)),
 
             zLayers(
-                listOf(I, I, I), // y = 1
-                listOf(I, I, I),
-                listOf(I, I, I)),
+                listOf(S, S, S), // y = 1
+                listOf(S, S, S),
+                listOf(S, S, S)),
 
             zLayers(
-                listOf(H, M, H), // y = 0
-                listOf(H, H, H),
-                listOf(H, H, H))
+                listOf(C, M, C), // y = 0
+                listOf(Q, Q, Q),
+                listOf(C, Q, C))
         )
     }
 

@@ -22,40 +22,41 @@ object MultiblockHydraulicPress : Multiblock() {
 
     init {
         val I = IgnoreBlockComponent
-        val R = corrugatedIronBlock()
-        val G = grateBlock()
-        val C = copperCoilBlock()
-        val Y = strippedBlock()
-        val U = columnBlock(EnumFacing.UP)
-        val H = columnBlock(EnumFacing.EAST)
+        val F = fenceSteelBlock()
+        val R = pressureHeadBlock()
+        val C = scaffoldingSteelBlock()
+        val T = sheetmetalSteelBlock()
+        val L = lightEngineeringBlock()
+        val S = steelBlock()
+        val H = heavyEngineeringBlock()
         val M = mainBlockOf(controllerBlock)
 
         scheme = yLayers(
 
             zLayers(
                 listOf(I, I, I), // y = 4
-                listOf(H, H, H),
+                listOf(C, C, C),
                 listOf(I, I, I)),
 
             zLayers(
                 listOf(I, I, I), // y = 3
-                listOf(U, R, U),
+                listOf(C, F, C),
                 listOf(I, I, I)),
 
             zLayers(
                 listOf(I, I, I), // y = 2
-                listOf(U, Y, U),
+                listOf(C, R, C),
                 listOf(I, I, I)),
 
             zLayers(
-                listOf(G, G, G), // y = 1
-                listOf(C, R, C),
-                listOf(G, G, G)),
+                listOf(T, H, T), // y = 1
+                listOf(L, S, L),
+                listOf(T, H, T)),
 
             zLayers(
-                listOf(G, M, G), // y = 0
-                listOf(G, G, G),
-                listOf(G, G, G))
+                listOf(H, M, H), // y = 0
+                listOf(H, H, H),
+                listOf(H, H, H))
         )
     }
 

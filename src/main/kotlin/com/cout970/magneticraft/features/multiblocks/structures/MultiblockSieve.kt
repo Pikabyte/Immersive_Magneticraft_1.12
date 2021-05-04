@@ -6,6 +6,7 @@ import com.cout970.magneticraft.misc.vector.times
 import com.cout970.magneticraft.misc.vector.vec3Of
 import com.cout970.magneticraft.systems.multiblocks.*
 import com.cout970.magneticraft.systems.tilerenderers.PIXEL
+import net.minecraft.init.Blocks
 import net.minecraft.util.EnumFacing
 import net.minecraft.util.math.AxisAlignedBB
 import net.minecraft.util.math.BlockPos
@@ -23,24 +24,24 @@ object MultiblockSieve : Multiblock() {
     init {
 
         val G = grateBlock()
-        val B = baseBlock()
-        val S = strippedBlock()
-        val C = corrugatedIronBlock()
-        val P = columnBlock(EnumFacing.UP)
+        val H = ofBlock(Blocks.HOPPER)
+        val B = scaffoldingSlabSteelBlock()
+        val S = scaffoldingSteelBlock()
+        val L = lightEngineeringBlock()
         val M = mainBlockOf(controllerBlock)
 
         scheme = yLayers(
-            zLayers(listOf(B, B, B), // y = 1
-                listOf(S, C, S),
-                listOf(S, C, S),
-                listOf(S, C, S),
-                listOf(S, C, S)),
+            zLayers(listOf(L, L, L), // y = 1
+                listOf(S, G, S),
+                listOf(S, G, S),
+                listOf(B, G, B),
+                listOf(B, B, B)),
 
-            zLayers(listOf(B, M, B), // y = 0
-                listOf(P, G, P),
-                listOf(P, G, P),
-                listOf(P, G, P),
-                listOf(B, G, B))
+            zLayers(listOf(L, M, L), // y = 0
+                listOf(S, H, S),
+                listOf(S, H, S),
+                listOf(S, H, S),
+                listOf(L, L, L))
         )
     }
 

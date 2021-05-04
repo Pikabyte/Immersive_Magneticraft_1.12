@@ -27,7 +27,7 @@ import java.io.File
     guiFactory = "com.cout970.magneticraft.systems.gui.ModGuiFactory",
     modLanguageAdapter = LANG_ADAPTER,
     acceptedMinecraftVersions = "[1.12]",
-    dependencies = "required-client:modelloader@[1.1.6,);required-after:forgelin",
+    dependencies = "required-client:modelloader@[1.1.6,);required-after:forgelin;required-after:immersiveengineering",
     updateJSON = "https://raw.githubusercontent.com/Magneticraft-Team/Magneticraft/1.12/src/main/resources/update.json"
 )
 //Singleton, see KotlinAdapter to know how it's loaded by forge

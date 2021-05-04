@@ -1,14 +1,7 @@
 package com.cout970.magneticraft.systems.multiblocks
 
-import com.cout970.magneticraft.features.multiblock_parts.Blocks.ColumnOrientation.*
-import com.cout970.magneticraft.features.multiblock_parts.toColumnAxis
-import com.cout970.magneticraft.misc.i18n
-import com.cout970.magneticraft.misc.inventory.stack
-import com.cout970.magneticraft.misc.prettyFormat
-import com.cout970.magneticraft.misc.vector.getRelative
+import blusunrize.immersiveengineering.common.IEContent
 import net.minecraft.block.Block
-import net.minecraft.init.Blocks
-import net.minecraft.util.EnumFacing
 import com.cout970.magneticraft.features.multiblock_parts.Blocks as MultiblockParts
 import com.cout970.magneticraft.features.multiblocks.Blocks as Multiblocks
 
@@ -17,60 +10,69 @@ fun Multiblock.ofBlock(block: Block): SingleBlockComponent {
     return SingleBlockComponent(block.defaultState, Multiblocks.gap.defaultState)
 }
 
-fun Multiblock.airBlock(): SingleBlockComponent {
-    return SingleBlockComponent(Blocks.AIR.defaultState, Blocks.AIR.defaultState)
-}
-
-fun Multiblock.copperCoilBlock(): SingleBlockComponent {
-    val block = MultiblockParts.PartType.COPPER_COIL.getBlockState(MultiblockParts.parts)
-    return SingleBlockComponent(block, Multiblocks.gap.defaultState)
-}
-
 fun Multiblock.grateBlock(): SingleBlockComponent {
     val block = MultiblockParts.PartType.GRATE.getBlockState(MultiblockParts.parts)
     return SingleBlockComponent(block, Multiblocks.gap.defaultState)
 }
 
-fun Multiblock.baseBlock(): SingleBlockComponent {
-    val block = MultiblockParts.PartType.BASE.getBlockState(MultiblockParts.parts)
-    return SingleBlockComponent(block, Multiblocks.gap.defaultState)
-}
-
-fun Multiblock.corrugatedIronBlock(): SingleBlockComponent {
+fun Multiblock.corrugatedBlock(): SingleBlockComponent {
     val block = MultiblockParts.PartType.CORRUGATED_IRON.getBlockState(MultiblockParts.parts)
     return SingleBlockComponent(block, Multiblocks.gap.defaultState)
 }
 
-fun Multiblock.strippedBlock(): SingleBlockComponent {
-    val block = MultiblockParts.PartType.STRIPED.getBlockState(MultiblockParts.parts)
+fun Multiblock.pressureHeadBlock(): SingleBlockComponent {
+    val block = MultiblockParts.PartType.BASE.getBlockState(MultiblockParts.parts)
     return SingleBlockComponent(block, Multiblocks.gap.defaultState)
 }
 
-fun Multiblock.columnBlock(dir: EnumFacing): ContextBlockComponent {
-    val block = MultiblockParts.column
-    return ContextBlockComponent(
-        getter = { ctx -> ctx.facing.getRelative(dir).axis.toColumnAxis().getBlockState(block) },
-        stack = block.defaultState.stack(),
-        replacement = Multiblocks.gap.defaultState,
-        errorMsg = { ctx, state, pos ->
-            val vecStr = "[%d, %d, %d]".format(pos.x, pos.y, pos.z)
-            val axis = ctx.facing.getRelative(dir).axis.toColumnAxis()
-            val expected = axis.getBlockState(block)
+fun Multiblock.sheetmetalSteelBlock(): SingleBlockComponent {
+    val block = IEContent.blockSheetmetal.getStateFromMeta(8)
+    return SingleBlockComponent(block, Multiblocks.gap.defaultState)
+}
 
-            if (state.block == expected.block) {
-                val keyStr = "text.magneticraft.multiblock.invalid_column_orientation"
-                val axisName = when (axis) {
-                    AXIS_Y -> "Axis Y"
-                    AXIS_X -> "Axis X"
-                    AXIS_Z -> "Axis Z"
-                }
-                keyStr.i18n(vecStr, state.prettyFormat(), axisName)
-            } else {
-                val keyStr = "text.magneticraft.multiblock.invalid_block"
-                keyStr.i18n(vecStr, state.prettyFormat(), expected.prettyFormat())
-            }
-        }
-    )
+fun Multiblock.sheetmetalIronBlock(): SingleBlockComponent {
+    val block = IEContent.blockSheetmetal.getStateFromMeta(9)
+    return SingleBlockComponent(block, Multiblocks.gap.defaultState)
+}
+
+fun Multiblock.steelBlock(): SingleBlockComponent {
+    val block = IEContent.blockStorage.getStateFromMeta(8)
+    return SingleBlockComponent(block, Multiblocks.gap.defaultState)
+}
+
+fun Multiblock.dynamoBlock(): SingleBlockComponent {
+    val block = IEContent.blockMetalDevice1.getStateFromMeta(2)
+    return SingleBlockComponent(block, Multiblocks.gap.defaultState)
+}
+
+fun Multiblock.lightEngineeringBlock(): SingleBlockComponent {
+    val block = IEContent.blockMetalDecoration0.getStateFromMeta(4)
+    return SingleBlockComponent(block, Multiblocks.gap.defaultState)
+}
+
+fun Multiblock.heavyEngineeringBlock(): SingleBlockComponent {
+    val block = IEContent.blockMetalDecoration0.getStateFromMeta(5)
+    return SingleBlockComponent(block, Multiblocks.gap.defaultState)
+}
+
+fun Multiblock.fenceSteelBlock(): SingleBlockComponent {
+    val block = IEContent.blockMetalDecoration1.getStateFromMeta(0)
+    return SingleBlockComponent(block, Multiblocks.gap.defaultState)
+}
+
+fun Multiblock.scaffoldingSteelBlock(): SingleBlockComponent {
+    val block = IEContent.blockMetalDecoration1.getStateFromMeta(1)
+    return SingleBlockComponent(block, Multiblocks.gap.defaultState)
+}
+
+fun Multiblock.scaffoldingSlabSteelBlock(): SingleBlockComponent {
+    val block = IEContent.blockMetalDecorationSlabs1.getStateFromMeta(1)
+    return SingleBlockComponent(block, Multiblocks.gap.defaultState)
+}
+
+fun Multiblock.barrelIronBlock(): SingleBlockComponent {
+    val block = IEContent.blockMetalDevice0.getStateFromMeta(4)
+    return SingleBlockComponent(block, Multiblocks.gap.defaultState)
 }
 
 fun Multiblock.mainBlockOf(it: Block): MainBlockComponent {
