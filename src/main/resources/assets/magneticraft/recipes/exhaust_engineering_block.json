@@ -1,0 +1,27 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "A A",
+    "A A",
+    "CBC"
+  ],
+  "key": {
+    "A": {
+      "item": "immersiveengineering:sheetmetal",
+      "data": 9
+    },
+    "B": {
+      "item": "immersiveengineering:metal_device1",
+      "data": 6
+    },
+    "C": {
+      "item": "immersiveengineering:sheetmetal",
+      "data": 8
+    }
+  },
+  "result": {
+    "item": "magneticraft:multiblock_parts",
+    "data": 3,
+    "count": 2
+  }
+}

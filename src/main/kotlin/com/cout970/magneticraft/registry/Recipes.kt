@@ -1,5 +1,6 @@
 package com.cout970.magneticraft.registry
 
+import blusunrize.immersiveengineering.common.IEContent
 import com.cout970.magneticraft.api.internal.registries.machines.crushingtable.CrushingTableRecipeManager
 import com.cout970.magneticraft.api.internal.registries.machines.hydraulicpress.HydraulicPressRecipeManager
 import com.cout970.magneticraft.api.internal.registries.machines.sieve.SieveRecipeManager
@@ -14,6 +15,7 @@ import net.minecraft.init.Items
 import net.minecraft.item.ItemStack
 import net.minecraftforge.fluids.FluidRegistry
 import net.minecraftforge.fml.common.registry.GameRegistry
+import net.minecraftforge.oredict.OreDictionary
 
 
 /**
@@ -36,10 +38,19 @@ fun registerRecipes() {
     // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     //                                              CRUSHING TABLE RECIPES
     // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    // skulls
-    addCrushingTableRecipe(Items.SKULL.stack(meta = 4), Items.GUNPOWDER.stack(8), true)    // creeper
-    addCrushingTableRecipe(Items.SKULL.stack(meta = 0), Items.DYE.stack(8, 15), true) // skeleton
-    addCrushingTableRecipe(Items.SKULL.stack(meta = 2), Items.ROTTEN_FLESH.stack(4), true) // zombie
+    //Plates
+    if (OreDictionary.getOres("plateTin", false) != null)
+        addCrushingTableRecipe(OreDictionary.getOres("plateTin", false).get(0), OreDictionary.getOres("ingotTin", false).get(0))
+    addCrushingTableRecipe(IEContent.itemMetal.stack(1, 0), IEContent.itemMetal.stack(1, 30))
+    addCrushingTableRecipe(IEContent.itemMetal.stack(1, 1), IEContent.itemMetal.stack(1, 31))
+    addCrushingTableRecipe(IEContent.itemMetal.stack(1, 2), IEContent.itemMetal.stack(1, 32))
+    addCrushingTableRecipe(IEContent.itemMetal.stack(1, 3), IEContent.itemMetal.stack(1, 33))
+    addCrushingTableRecipe(IEContent.itemMetal.stack(1, 4), IEContent.itemMetal.stack(1, 34))
+    addCrushingTableRecipe(IEContent.itemMetal.stack(1, 6), IEContent.itemMetal.stack(1, 36))
+    addCrushingTableRecipe(IEContent.itemMetal.stack(1, 7), IEContent.itemMetal.stack(1, 37))
+    addCrushingTableRecipe(IEContent.itemMetal.stack(1, 8), IEContent.itemMetal.stack(1, 38))
+    addCrushingTableRecipe(Items.IRON_INGOT.stack(1), IEContent.itemMetal.stack(1, 39))
+    addCrushingTableRecipe(Items.GOLD_INGOT.stack(1), IEContent.itemMetal.stack(1, 40))
 
     // rods
     addCrushingTableRecipe(Items.BLAZE_ROD.stack(), Items.BLAZE_POWDER.stack(5))

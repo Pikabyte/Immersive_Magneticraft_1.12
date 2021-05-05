@@ -1,0 +1,32 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " A ",
+    "BCB",
+    "ADA"
+  ],
+  "key": {
+    "A": {
+      "type": "forge:ore_dict",
+      "ore": "plateSteel"
+    },
+    "B": {
+      "type": "forge:ore_dict",
+      "ore": "stickSteel"
+    },
+    "C": {
+      "item": "immersiveengineering:metal_decoration0",
+      "count": 1,
+      "data": 0
+    },
+    "D": {
+      "item": "immersiveengineering:material",
+      "data": 8
+    }
+  },
+  "result": {
+    "item": "magneticraft:electric_engine",
+    "count": 1,
+    "data": 0
+  }
+}

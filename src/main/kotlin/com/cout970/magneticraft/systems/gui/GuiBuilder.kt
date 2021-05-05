@@ -218,7 +218,7 @@ class DslBars(val config: GuiConfig) {
     fun heatBar(node: IHeatNode) {
         barOf(
                 texture = vec2Of(34, 121),
-                value = { node.temperature / 700.0 },
+                value = { (node.temperature-271) / 400.0 },
                 tooltip = { listOf(formatHeat(node.temperature)) },
                 icon = 2
         )
