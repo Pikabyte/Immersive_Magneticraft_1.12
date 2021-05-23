@@ -30,7 +30,7 @@ class ModuleAirlock(
     override fun update() {
         super.update()
 
-        if (world.isServer && container.shouldTick(40)) {
+        if (world.isServer && container.shouldTick(4)) {
             if (node.voltage >= ElectricConstants.TIER_1_MACHINES_MIN_VOLTAGE) {
                 buildBubbles()
             } else {
@@ -47,57 +47,59 @@ class ModuleAirlock(
             }
         }
 
-        //fin water
-        for (j in -range..range) {
-            for (k in -range..range) {
-                for (i in -range..range) {
-                    val pos = pos.add(i, j, k)
-                    var block = world.getBlockState(pos).block
-                    if (i * i + j * j + k * k <= length) {
-                        if (block == Blocks.WATER || block == Blocks.FLOWING_WATER) {
-                            block = bubble
+        if (container.shouldTick(40)) {
+            //fin water
+            for (j in -range..range) {
+                for (k in -range..range) {
+                    for (i in -range..range) {
+                        val pos = pos.add(i, j, k)
+                        var block = world.getBlockState(pos).block
+                        if (i * i + j * j + k * k <= length) {
+                            if (block == Blocks.WATER || block == Blocks.FLOWING_WATER) {
+                                block = bubble
+                            }
                         }
-                    }
-                    if (block != Blocks.AIR) {
-                        array[i + range][j + range][k + range] = block
+                        if (block != Blocks.AIR) {
+                            array[i + range][j + range][k + range] = block
+                        }
                     }
                 }
             }
-        }
-        //remove unnecessary blocks
-        for (j in -range..range) {
-            for (k in -range..range) {
-                for (i in -range..range) {
-                    if (i * i + j * j + k * k <= length) {
-                        val x = i + range
-                        val y = j + range
-                        val z = k + range
-                        if (array[x][y][z] == bubble) {
-                            if (array[x - 1][y][z] != Blocks.WATER && array[x - 1][y][z] != Blocks.FLOWING_WATER &&
-                                array[x + 1][y][z] != Blocks.WATER && array[x + 1][y][z] != Blocks.FLOWING_WATER &&
-                                array[x][y - 1][z] != Blocks.WATER && array[x][y - 1][z] != Blocks.FLOWING_WATER &&
-                                array[x][y + 1][z] != Blocks.WATER && array[x][y + 1][z] != Blocks.FLOWING_WATER &&
-                                array[x][y][z - 1] != Blocks.WATER && array[x][y][z - 1] != Blocks.FLOWING_WATER &&
-                                array[x][y][z + 1] != Blocks.WATER && array[x][y][z + 1] != Blocks.FLOWING_WATER) {
-                                array[x][y][z] = Blocks.AIR
+            //remove unnecessary blocks
+            for (j in -range..range) {
+                for (k in -range..range) {
+                    for (i in -range..range) {
+                        if (i * i + j * j + k * k <= length) {
+                            val x = i + range
+                            val y = j + range
+                            val z = k + range
+                            if (array[x][y][z] == bubble) {
+                                if (array[x - 1][y][z] != Blocks.WATER && array[x - 1][y][z] != Blocks.FLOWING_WATER &&
+                                        array[x + 1][y][z] != Blocks.WATER && array[x + 1][y][z] != Blocks.FLOWING_WATER &&
+                                        array[x][y - 1][z] != Blocks.WATER && array[x][y - 1][z] != Blocks.FLOWING_WATER &&
+                                        array[x][y + 1][z] != Blocks.WATER && array[x][y + 1][z] != Blocks.FLOWING_WATER &&
+                                        array[x][y][z - 1] != Blocks.WATER && array[x][y][z - 1] != Blocks.FLOWING_WATER &&
+                                        array[x][y][z + 1] != Blocks.WATER && array[x][y][z + 1] != Blocks.FLOWING_WATER) {
+                                    array[x][y][z] = Blocks.AIR
+                                }
                             }
                         }
                     }
                 }
             }
-        }
-        //apply changes
-        for (j in -range..range) {
-            for (k in -range..range) {
-                for (i in -range..range) {
-                    if (i * i + j * j + k * k <= length) {
-                        val x = i + range
-                        val y = j + range
-                        val z = k + range
-                        if (array[x][y][z] == bubble) {
-                            if (node.voltage >= ElectricConstants.TIER_1_MACHINES_MIN_VOLTAGE) {
-                                world.setBlockState(pos.add(i, j, k), ElectricBlocks.DecayMode.OFF.getBlockState(bubble))
-                                node.applyPower(-Config.airlockBubbleCost, false)
+            //apply changes
+            for (j in -range..range) {
+                for (k in -range..range) {
+                    for (i in -range..range) {
+                        if (i * i + j * j + k * k <= length) {
+                            val x = i + range
+                            val y = j + range
+                            val z = k + range
+                            if (array[x][y][z] == bubble) {
+                                if (node.voltage >= ElectricConstants.TIER_1_MACHINES_MIN_VOLTAGE) {
+                                    world.setBlockState(pos.add(i, j, k), ElectricBlocks.DecayMode.OFF.getBlockState(bubble))
+                                    node.applyPower(-Config.airlockBubbleCost, false)
+                                }
                             }
                         }
                     }

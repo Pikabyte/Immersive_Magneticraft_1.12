@@ -114,7 +114,7 @@ private fun addSmeltingRecipe(result: ItemStack, input: ItemStack) {
 }
 
 private fun addCrushingTableRecipe(input: ItemStack, output: ItemStack, strict: Boolean = false) {
-    CrushingTableRecipeManager.registerRecipe(CrushingTableRecipeManager.createRecipe(input, output, !strict))
+    CrushingTableRecipeManager.registerRecipe(CrushingTableRecipeManager.createRecipe(input, output, strict))
 }
 
 private fun addSluiceBoxRecipe(input: ItemStack, output: ItemStack,

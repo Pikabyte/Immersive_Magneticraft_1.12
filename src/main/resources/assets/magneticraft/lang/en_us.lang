@@ -29,7 +29,7 @@ tile.magneticraft.sluice_box_center_north.name=Sluice Box
 tile.magneticraft.feeding_trough_center_north.name=Wooden Feeding Trough
 
 tile.magneticraft.inserter_north.name=Inserter
-tile.magneticraft.combustion_chamber_north.name=Solid Fuel Combustion Chamber
+tile.magneticraft.combustion_chamber_north.name=Solid Fuel Firebox
 tile.magneticraft.steam_boiler_normal.name=Solid Fuel Boiler
 tile.magneticraft.electric_engine_down.name=LV Alternator
 
@@ -42,7 +42,7 @@ tile.magneticraft.sieve_inactive_north.name=Sieve
 tile.magneticraft.shelving_unit_inactive_north.name=Shelving Unit
 tile.magneticraft.steam_engine_inactive_north.name=Steam Engine
 tile.magneticraft.hydraulic_press_inactive_north.name=Precision Hydraulic Press
-tile.magneticraft.big_combustion_chamber_inactive_north.name=Large Solid Fuel Combustion Chamber
+tile.magneticraft.big_combustion_chamber_inactive_north.name=Large Solid Fuel Firebox
 tile.magneticraft.big_steam_boiler_inactive_north.name=Large Solid Fuel Boiler
 
 # Multiblock parts
