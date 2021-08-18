@@ -1,7 +1,6 @@
-[![Support Server Invite](https://img.shields.io/badge/Join-Magneticraft-7289DA.svg?style=flat-square)](https://discord.gg/EhYbA97) [![Build Status](https://travis-ci.org/Magneticraft-Team/Magneticraft.svg?branch=kt1.9)](https://travis-ci.org/Magneticraft-Team/Magneticraft)
-
 # Magneticraft
-Magneticraft mod, more info in curseforge https://minecraft.curseforge.com/projects/magneticraft
+A modification of the Magneticraft mod, original found here: https://minecraft.curseforge.com/projects/magneticraft
+This modification makes it into an Immersive Engineering + Addons companion/addon by removing most overlapping content
 
 ### Compiling the mod
 This is a small tutorial for non-modders to get the last version of the mod from github, so you can play with alpha versions of the mod.
