@@ -32,6 +32,8 @@ class TileShelvingUnit : TileMultiblock(), ITickable {
 
     @DoNotRemove
     override fun update() {
+        markDirty()
+        invModule.update()
         super.update()
     }
 }

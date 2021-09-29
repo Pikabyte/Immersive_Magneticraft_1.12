@@ -115,13 +115,13 @@ class ModuleShelvingUnitMb(
         }
     }
 
-    fun sortStacks() {
+    fun sortStacks(startingIndex: Int, endIndex : Int) {
         val items = mutableListOf<ItemStack>()
-        repeat(inventory.size) { index ->
-            if (inventory[index].isNotEmpty) {
-                items += inventory[index]
+        repeat(endIndex - startingIndex) { index ->
+            if (inventory[index + startingIndex].isNotEmpty) {
+                items += inventory[index + startingIndex]
             }
-            inventory[index] = ItemStack.EMPTY
+            inventory[index + startingIndex] = ItemStack.EMPTY
         }
 
         items.sortWith(Comparator { a, b ->
@@ -139,13 +139,10 @@ class ModuleShelvingUnitMb(
         val queue = ArrayDeque(items)
         var count = 0
 
-        while (queue.isNotEmpty() && count < inventory.slots) {
+        while (queue.isNotEmpty() && count < endIndex + 1) {
             val stack = queue.pollFirst()!!
-            val remaining = inventory.insertItem(stack, false)
+            if (inventory[count + startingIndex].isEmpty) inventory.set(count + startingIndex, stack)
 
-            if (remaining.isNotEmpty) {
-                queue.addFirst(remaining)
-            }
             count++
         }
 

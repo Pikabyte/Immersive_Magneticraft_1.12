@@ -136,7 +136,10 @@ class ContainerShelvingUnit(builder: GuiBuilder, configFunc: (AutoContainer) -> 
     }
 
     override fun receiveDataFromClient(ibd: IBD) {
-        ibd.getBoolean(DATA_ID_SHELVING_UNIT_SORT) { tile.shelvingUnitModule.sortStacks() }
+        ibd.getBoolean(DATA_ID_SHELVING_UNIT_SORT) {
+            System.out.println(currentSlots[0].slotIndex.toString() + " " +  currentSlots[currentSlots.lastIndex].slotIndex.toString())
+            tile.shelvingUnitModule.sortStacks(currentSlots[0].slotIndex, currentSlots[currentSlots.lastIndex].slotIndex)
+        }
         ibd.getInteger(DATA_ID_SHELVING_UNIT_LEVEL) { switchLevel(ModuleShelvingUnitMb.Level.values()[it]) }
         ibd.getFloat(DATA_ID_SHELVING_UNIT_SCROLL) { withScroll(it) }
         ibd.getIntArray(DATA_ID_SHELVING_UNIT_FILTER) { serverFilterSlots(it) }
