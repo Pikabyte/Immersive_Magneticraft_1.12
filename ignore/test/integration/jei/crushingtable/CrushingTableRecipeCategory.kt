@@ -16,7 +16,7 @@ import net.minecraft.client.Minecraft
 object CrushingTableRecipeCategory : IRecipeCategory<CrushingTableRecipeWrapper> {
 
 
-    private val title = Translator.translateToLocal("text.magneticraft.jei.crushing_table")
+    private val title = Translator.translateToLocal("text.immersive-magneticraft.jei.crushing_table")
     private val background = DrawableResource(resource("textures/gui/jei/gui.png"), 0, 0, 64, 64, 5, 5, 25, 25)
 
     override fun drawExtras(minecraft: Minecraft) {}

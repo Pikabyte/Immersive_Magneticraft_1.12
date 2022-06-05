@@ -13,8 +13,8 @@ import java.lang.reflect.Field
 import java.lang.reflect.Method
 
 // Mod metadata used by Forge
-const val MOD_ID = "magneticraft"
-const val MOD_NAME = "Magneticraft"
+const val MOD_ID = "immersive-magneticraft"
+const val MOD_NAME = "Immersive Magneticraft"
 const val LANG_ADAPTER = "com.cout970.magneticraft.KotlinAdapter"
 
 typealias AABB = AxisAlignedBB
@@ -33,7 +33,7 @@ class KotlinAdapter : ILanguageAdapter {
         try {
             Class.forName("kotlin.jvm.internal.Intrinsics")
         } catch (error: NoClassDefFoundError) {
-            FMLCommonHandler.instance().raiseException(error, "Mod Magneticraft requires the Kotlin standard library, please install Forgelin", true)
+            FMLCommonHandler.instance().raiseException(error, "Mod Immersive Magneticraft requires the Kotlin standard library, please install Forgelin", true)
         }
     }
 

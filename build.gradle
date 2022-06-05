@@ -1,6 +1,6 @@
 buildscript {
     ext.project_kotlin_version = '1.3.50'
-    ext.mod_version = '2.8.3'
+    ext.mod_version = '1.0'
     
     repositories {
         jcenter()
@@ -17,7 +17,7 @@ apply plugin: 'kotlin'
 apply plugin: 'maven'
 
 archivesBaseName = name
-version mod_version + '-' + getBuildNumber()
+version '1.0'
 group 'com.cout970.magneticraft'
 
 sourceCompatibility = JavaVersion.VERSION_1_8

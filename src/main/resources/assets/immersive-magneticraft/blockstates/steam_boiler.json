@@ -1,0 +1,13 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "immersive-magneticraft:empty",
+        "transform": "forge:default-block",
+        "textures": {
+            "particle": "immersive-magneticraft:blocks/machines/boiler"
+        }
+    },
+    "variants": {
+        "normal": [{}]
+    }
+}

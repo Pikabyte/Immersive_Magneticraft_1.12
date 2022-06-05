@@ -39,9 +39,9 @@ private fun load(): Map<String, GuiConfig> {
         .create()
 
     val input = if (Debug.DEBUG && Debug.srcDir != null) {
-        File(Debug.srcDir!!, "src/main/resources/assets/magneticraft/gui_config.json").inputStream()
+        File(Debug.srcDir!!, "src/main/resources/assets/immersive-magneticraft/gui_config.json").inputStream()
     } else {
-        val path = "assets/magneticraft/gui_config.json"
+        val path = "assets/immersive-magneticraft/gui_config.json"
         Thread.currentThread().contextClassLoader.getResourceAsStream(path) ?: error("Not found: $path")
     }
 

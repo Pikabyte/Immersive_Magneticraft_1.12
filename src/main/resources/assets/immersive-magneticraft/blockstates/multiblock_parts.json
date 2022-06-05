@@ -1,0 +1,54 @@
+{
+    "forge_marker": 1,
+    "variants": {
+        "base": [{
+            "model": "cube",
+            "textures": {
+                "particle": "immersive-magneticraft:blocks/multiblock_parts/base_top",
+                "down": "immersive-magneticraft:blocks/multiblock_parts/base_bottom",
+                "up": "immersive-magneticraft:blocks/multiblock_parts/base_top",
+                "north": "immersive-magneticraft:blocks/multiblock_parts/base_side",
+                "east": "immersive-magneticraft:blocks/multiblock_parts/base_side",
+                "south": "immersive-magneticraft:blocks/multiblock_parts/base_side",
+                "west": "immersive-magneticraft:blocks/multiblock_parts/base_side"
+            }
+        }],
+        "electric": [{
+            "model": "cube_all",
+            "textures": {
+                "all": "immersive-magneticraft:blocks/multiblock_parts/electric"
+            }
+        }],
+        "grate": [{
+            "model": "cube_all",
+            "textures": {
+                "all": "immersive-magneticraft:blocks/multiblock_parts/iron_grate"
+            }
+        }],
+        "striped": [{
+            "model": "cube_all",
+            "textures": {
+                "all": "immersive-magneticraft:blocks/multiblock_parts/striped"
+            }
+        }],
+        "copper_coil": [{
+            "model": "cube",
+            "textures": {
+                "particle": "immersive-magneticraft:blocks/multiblock_parts/copper_coil",
+                "down": "immersive-magneticraft:blocks/multiblock_parts/copper_coil",
+                "up": "immersive-magneticraft:blocks/multiblock_parts/copper_coil",
+                "north": "immersive-magneticraft:blocks/multiblock_parts/copper_coil_side",
+                "east": "immersive-magneticraft:blocks/multiblock_parts/copper_coil_side",
+                "south": "immersive-magneticraft:blocks/multiblock_parts/copper_coil_side",
+                "west": "immersive-magneticraft:blocks/multiblock_parts/copper_coil_side"
+            }
+        }],
+        "corrugated_iron": [{
+            "model": "cube_column",
+            "textures": {
+                "end": "immersive-magneticraft:blocks/multiblock_parts/column_end",
+                "side": "immersive-magneticraft:blocks/multiblock_parts/column_side"
+            }
+        }]
+    }
+}

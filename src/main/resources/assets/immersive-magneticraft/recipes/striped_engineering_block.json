@@ -1,0 +1,27 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "ABA",
+    "B C",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "type": "forge:ore_dict",
+      "ore": "blockSheetmetalIron"
+    },
+    "B": {
+      "type": "forge:ore_dict",
+      "ore": "dyeYellow"
+    },
+    "C": {
+      "type": "forge:ore_dict",
+      "ore": "dyeBlack"
+    }
+  },
+  "result": {
+    "item": "immersive-magneticraft:multiblock_parts",
+    "data": 2,
+    "count": 4
+  }
+}

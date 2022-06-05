@@ -87,7 +87,7 @@ class ComponentShelvingUnit : IComponent {
             color(1f, 1f, 1f, 1f)
             gui.drawColor(start, end, 0xF0000000.toInt())
             gui.drawCenteredString(
-                text = I18n.format("text.magneticraft.shelving_unit_add_chests"),
+                text = I18n.format("text.immersive-magneticraft.shelving_unit_add_chests"),
                 pos = vec2Of(88, 61),
                 color = 0xFFFFFFFF.toInt()
             )

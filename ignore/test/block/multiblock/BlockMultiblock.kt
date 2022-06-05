@@ -106,9 +106,9 @@ abstract class BlockMultiblock(material: Material, name: String) : BlockMultiSta
         val errors = MultiblockManager.checkMultiblockStructure(context)
         val playerIn = context.player!!
         if (errors.isNotEmpty()) {
-            playerIn.sendMessage("text.magneticraft.multiblock.error_count", errors.size, color = TextFormatting.AQUA)
+            playerIn.sendMessage("text.immersive-magneticraft.multiblock.error_count", errors.size, color = TextFormatting.AQUA)
             if (errors.size > 2) {
-                playerIn.sendMessage("text.magneticraft.multiblock.first_errors", 2, color = TextFormatting.AQUA)
+                playerIn.sendMessage("text.immersive-magneticraft.multiblock.first_errors", 2, color = TextFormatting.AQUA)
                 var count = 0
                 errors.forEach {
                     if (count >= 2) return@forEach
@@ -116,14 +116,14 @@ abstract class BlockMultiblock(material: Material, name: String) : BlockMultiSta
                     count++
                 }
             } else {
-                playerIn.sendMessage("text.magneticraft.multiblock.all_errors", color = TextFormatting.DARK_AQUA)
+                playerIn.sendMessage("text.immersive-magneticraft.multiblock.all_errors", color = TextFormatting.DARK_AQUA)
                 errors.forEach {
                     playerIn.addChatComponentMessage(it.apply { style.color = TextFormatting.DARK_RED })
                 }
             }
         } else {
             MultiblockManager.activateMultiblockStructure(context)
-            playerIn.sendMessage("text.magneticraft.multiblock.activate", color = TextFormatting.GREEN)
+            playerIn.sendMessage("text.immersive-magneticraft.multiblock.activate", color = TextFormatting.GREEN)
         }
     }
 

@@ -82,7 +82,7 @@ class MagneticraftPlugin : IModPlugin {
         registry.addRecipeCategories(RecipeCategory<CrushingTableRecipeWrapper>(
                 id = CRUSHING_TABLE_ID,
                 backgroundTexture = "crushing_table",
-                unlocalizedTitle = "text.magneticraft.jei.crushing_table",
+                unlocalizedTitle = "text.immersive-magneticraft.jei.crushing_table",
                 initFunc = { recipeLayout, recipeWrapper, ing ->
                     recipeLayout.itemStacks.init(0, true, 48, 15 - 5)
                     recipeLayout.itemStacks.init(1, false, 48, 51 - 5)
@@ -94,7 +94,7 @@ class MagneticraftPlugin : IModPlugin {
         registry.addRecipeCategories(RecipeCategory<SluiceBoxRecipeWrapper>(
                 id = SLUICE_BOX_ID,
                 backgroundTexture = "sluice_box",
-                unlocalizedTitle = "text.magneticraft.jei.sluice_box",
+                unlocalizedTitle = "text.immersive-magneticraft.jei.sluice_box",
                 initFunc = { recipeLayout, recipeWrapper, ing ->
                     val recipe = recipeWrapper.recipe
 
@@ -123,7 +123,7 @@ class MagneticraftPlugin : IModPlugin {
         registry.addRecipeCategories(RecipeCategory<SieveRecipeWrapper>(
                 id = SIEVE_ID,
                 backgroundTexture = "sieve",
-                unlocalizedTitle = "text.magneticraft.jei.sieve",
+                unlocalizedTitle = "text.immersive-magneticraft.jei.sieve",
                 initFunc = { recipeLayout, recipeWrapper, _ ->
                     recipeLayout.itemStacks.init(0, true, 48, 10)
                     recipeLayout.itemStacks.init(1, false, 30, 46)
@@ -153,14 +153,14 @@ class MagneticraftPlugin : IModPlugin {
         registry.addRecipeCategories(RecipeCategory<HydraulicPressRecipeWrapper>(
                 id = HYDRAULIC_PRESS_ID,
                 backgroundTexture = "hydraulic_press",
-                unlocalizedTitle = "text.magneticraft.jei.hydraulic_press",
+                unlocalizedTitle = "text.immersive-magneticraft.jei.hydraulic_press",
                 initFunc = { recipeLayout, recipeWrapper, _ ->
                     recipeLayout.itemStacks.init(0, true, 49, 11)
                     recipeLayout.itemStacks.init(1, false, 49, 42)
 
                     recipeLayout.itemStacks.set(0, recipeWrapper.recipe.input)
                     recipeLayout.itemStacks.set(1, recipeWrapper.recipe.output.applyNonEmpty {
-                        addTooltip(t("text.magneticraft.jei.time", recipeWrapper.recipe.duration.toString()))
+                        addTooltip(t("text.immersive-magneticraft.jei.time", recipeWrapper.recipe.duration.toString()))
                     })
 
                     // mode indicator
@@ -171,7 +171,7 @@ class MagneticraftPlugin : IModPlugin {
                         HydraulicPressMode.HEAVY -> Blocks.IRON_BLOCK.stack()
                     }
 
-                    modeItem.addTooltip(t("text.magneticraft.jei.hydraulic_hammer." +
+                    modeItem.addTooltip(t("text.immersive-magneticraft.jei.hydraulic_hammer." +
                             recipeWrapper.recipe.mode.name.toLowerCase()))
 
                     recipeLayout.itemStacks.init(2, false, 78, 25)
@@ -217,13 +217,13 @@ class MagneticraftPlugin : IModPlugin {
             val level = ModuleCrushingTable.getCrushingLevel(recipe.input)
 
             val name = when (level) {
-                -1 -> t("text.magneticraft.jei.mining_level.-1")
-                0 -> t("text.magneticraft.jei.mining_level.0")
-                1 -> t("text.magneticraft.jei.mining_level.1")
-                2 -> t("text.magneticraft.jei.mining_level.2")
-                3 -> t("text.magneticraft.jei.mining_level.3")
-                4 -> t("text.magneticraft.jei.mining_level.4")
-                else -> t("text.magneticraft.jei.mining_level.other", level.toString())
+                -1 -> t("text.immersive-magneticraft.jei.mining_level.-1")
+                0 -> t("text.immersive-magneticraft.jei.mining_level.0")
+                1 -> t("text.immersive-magneticraft.jei.mining_level.1")
+                2 -> t("text.immersive-magneticraft.jei.mining_level.2")
+                3 -> t("text.immersive-magneticraft.jei.mining_level.3")
+                4 -> t("text.immersive-magneticraft.jei.mining_level.4")
+                else -> t("text.immersive-magneticraft.jei.mining_level.other", level.toString())
             }
 
             minecraft.fontRenderer.drawString(name, 16, 68, Color.gray.rgb)
@@ -254,7 +254,7 @@ class MagneticraftPlugin : IModPlugin {
         }
 
         override fun drawInfo(minecraft: Minecraft, recipeWidth: Int, recipeHeight: Int, mouseX: Int, mouseY: Int) {
-            minecraft.fontRenderer.drawString(t("text.magneticraft.jei.require_water"), 0, 68, Color.gray.rgb)
+            minecraft.fontRenderer.drawString(t("text.immersive-magneticraft.jei.require_water"), 0, 68, Color.gray.rgb)
         }
 
         private fun getOreDictEquivalents(stack: ItemStack): List<ItemStack> {
@@ -283,7 +283,7 @@ class MagneticraftPlugin : IModPlugin {
 
         override fun drawInfo(minecraft: Minecraft, recipeWidth: Int, recipeHeight: Int, mouseX: Int, mouseY: Int) {
             minecraft.fontRenderer.drawString(
-                    t("text.magneticraft.jei.time", recipe.duration.toString()),
+                    t("text.immersive-magneticraft.jei.time", recipe.duration.toString()),
                     32, 68, Color.gray.rgb)
         }
 
@@ -322,7 +322,7 @@ class MagneticraftPlugin : IModPlugin {
         override fun drawInfo(minecraft: Minecraft, recipeWidth: Int, recipeHeight: Int, mouseX: Int, mouseY: Int) {
             slot.draw(minecraft)
             minecraft.fontRenderer.drawString(
-                    t("text.magneticraft.jei.time", recipe.duration.toString()),
+                    t("text.immersive-magneticraft.jei.time", recipe.duration.toString()),
                     32, 68, Color.gray.rgb)
         }
 

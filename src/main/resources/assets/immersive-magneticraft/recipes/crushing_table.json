@@ -1,0 +1,30 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "AAA",
+    "BCB",
+    "CDC"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:stone_slab",
+      "data": 0
+    },
+    "B": {
+      "type": "forge:ore_dict",
+      "ore": "stickWood"
+    },
+    "C": {
+      "type": "forge:ore_dict",
+      "ore": "plankWood"
+    },
+    "D": {
+      "type": "forge:ore_dict",
+      "ore": "logWood"
+    }
+  },
+  "result": {
+    "item": "immersive-magneticraft:crushing_table",
+    "data": 0
+  }
+}

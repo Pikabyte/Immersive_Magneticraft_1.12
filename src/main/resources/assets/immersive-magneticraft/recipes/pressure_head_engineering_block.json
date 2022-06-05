@@ -1,0 +1,27 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "BCB",
+    "AAA",
+    "BCB"
+  ],
+  "key": {
+    "A": {
+      "type": "forge:ore_dict",
+      "ore": "blockSteel"
+    },
+    "B": {
+      "type": "forge:ore_dict",
+      "ore": "ingotSteel"
+    },
+    "C": {
+      "item": "immersiveengineering:material",
+      "data": 9
+    }
+  },
+  "result": {
+    "item": "immersive-magneticraft:multiblock_parts",
+    "data": 0,
+    "count": 2
+  }
+}

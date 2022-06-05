@@ -188,7 +188,7 @@ object Blocks : IBlockMaker {
         val playerIn = context.player!!
         if (errors.isEmpty()) {
             MultiblockManager.activateMultiblockStructure(context)
-            playerIn.sendMessage("text.magneticraft.multiblock.activate", color = TextFormatting.GREEN)
+            playerIn.sendMessage("text.immersive-magneticraft.multiblock.activate", color = TextFormatting.GREEN)
         }
     }
 

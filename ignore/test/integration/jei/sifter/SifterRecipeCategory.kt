@@ -16,7 +16,7 @@ import net.minecraft.client.Minecraft
  */
 object SifterRecipeCategory : IRecipeCategory<SifterRecipeWrapper> {
 
-    private val title = Translator.translateToLocal("text.magneticraft.jei.sifter")
+    private val title = Translator.translateToLocal("text.immersive-magneticraft.jei.sifter")
     private val background = DrawableResource(resource("textures/gui/jei/gui.png"), 64, 0, 64, 64, 5, 5, 25, 25)
 
     override fun drawAnimations(minecraft: Minecraft) {}

@@ -16,7 +16,7 @@ import net.minecraft.client.Minecraft
  */
 object GrinderRecipeCategory : IRecipeCategory<GrinderRecipeWrapper> {
 
-    private val title = Translator.translateToLocal("text.magneticraft.jei.grinder")
+    private val title = Translator.translateToLocal("text.immersive-magneticraft.jei.grinder")
     private val background = DrawableResource(resource("textures/gui/jei/grinder.png"), 0, 0, 64, 64, 5, 5, 25, 25)
 
     override fun drawAnimations(minecraft: Minecraft) {}
