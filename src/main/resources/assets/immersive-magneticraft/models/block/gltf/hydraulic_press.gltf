@@ -1840,10 +1840,10 @@
       "uri": "immersive-magneticraft:blocks/multiblocks/hydraulic_press"
     },
     {
-      "uri": "magneticraft:blocks/multiblocks/hydraulic_press_aux2"
+      "uri": "immersive-magneticraft:blocks/multiblocks/hydraulic_press_aux2"
     },
     {
-      "uri": "magneticraft:blocks/multiblocks/hydraulic_press_aux"
+      "uri": "immersive-magneticraft:blocks/multiblocks/hydraulic_press_aux"
     }
   ],
   "materials": [

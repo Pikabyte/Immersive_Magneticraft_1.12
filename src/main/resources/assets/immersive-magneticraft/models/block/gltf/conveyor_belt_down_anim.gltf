@@ -23,11 +23,11 @@
       "type": "VEC2",
       "max": [
         0.875000044703482,
-        1.0000000335276107
+        1.0000000335276125
       ],
       "min": [
         0.12499995529651797,
-        -3.352761246411262E-8
+        -3.352761068775578E-8
       ]
     }
   ],
@@ -37,7 +37,7 @@
   },
   "buffers": [
     {
-      "uri": "conveyor_belt_up_anim.bin",
+      "uri": "conveyor_belt_down_anim.bin",
       "byteLength": 360
     }
   ],
@@ -56,7 +56,7 @@
   ],
   "images": [
     {
-      "uri": "magneticraft:blocks/machines/conveyor_belt_anim"
+      "uri": "immersive-magneticraft:blocks/machines/conveyor_belt_anim"
     }
   ],
   "materials": [

@@ -10,7 +10,7 @@ import net.minecraftforge.fml.relauncher.SideOnly
  * Created by cout970 on 13/05/2016.
  * Creates the tab for the Magneticraft items in creative inventory.
  */
-object CreativeTabMg : CreativeTabs("magneticraft") {
+object CreativeTabMg : CreativeTabs("immersive-magneticraft") {
 
     @SideOnly(Side.CLIENT)
     override fun getTranslatedTabLabel(): String {
