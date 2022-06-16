@@ -17,7 +17,7 @@ import net.minecraft.client.Minecraft
  */
 object KilnRecipeCategory : IRecipeCategory<KilnRecipeWrapper> {
 
-    private val title = Translator.translateToLocal("text.immersive-magneticraft.jei.kiln")
+    private val title = Translator.translateToLocal("text.immersivemagneticraft.jei.kiln")
     private val background = DrawableResource(resource("textures/gui/jei/gui.png"), 128, 0, 64, 64, 5, 5, 25, 25)
 
     override fun drawAnimations(minecraft: Minecraft) {}

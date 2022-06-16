@@ -1,0 +1,30 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "ABA",
+    "A A",
+    "CDC"
+  ],
+  "key": {
+    "A": {
+      "item": "immersiveengineering:sheetmetal",
+      "data": 8
+    },
+    "B": {
+      "item": "immersiveengineering:metal_device0",
+      "data": 5
+    },
+    "C": {
+      "item": "immersiveengineering:metal_device1",
+      "data": 6
+    },
+    "D": {
+      "item": "immersiveengineering:metal_device0",
+      "data": 6
+    }
+  },
+  "result": {
+    "item": "immersivemagneticraft:airlock",
+    "data": 0
+  }
+}

@@ -7,7 +7,7 @@ import crafttweaker.api.item.IItemStack
 import stanhebben.zenscript.annotations.ZenClass
 import stanhebben.zenscript.annotations.ZenMethod
 
-@ZenClass("mods.magneticraft.HydraulicPress")
+@ZenClass("mods.immersivemagneticraft.HydraulicPress")
 @ZenRegister
 object HydraulicPress {
 

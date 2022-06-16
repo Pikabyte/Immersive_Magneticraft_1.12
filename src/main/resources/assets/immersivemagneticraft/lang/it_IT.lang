@@ -1,0 +1,251 @@
+#translated by Edoebzd
+
+itemGroup.immersivemagneticraft=immersivemagneticraft
+item.immersivemagneticraft.guide_book_normal.name=immersivemagneticraft Libro Guida
+
+item.immersivemagneticraft.iron_hammer_normal.name=Martello Di Ferro
+item.immersivemagneticraft.stone_hammer_normal.name=Martello Di Pietra
+item.immersivemagneticraft.steel_hammer_normal.name=Martello Di Acciaio
+
+item.immersivemagneticraft.heavy_plates_iron.name=Piastra Di Ferro Pesante
+item.immersivemagneticraft.heavy_plates_gold.name=Piastra D'Oro Pesante
+item.immersivemagneticraft.heavy_plates_copper.name=Piastra Di Rame Pesante
+item.immersivemagneticraft.heavy_plates_lead.name=Piastra Di Piombo Pesante
+item.immersivemagneticraft.heavy_plates_cobalt.name=Piastra Di Cobalto Pesante
+item.immersivemagneticraft.heavy_plates_tungsten.name=Piastra Di Tungsteno Pesante
+item.immersivemagneticraft.heavy_plates_steel.name=Piastra Di Acciaio Pesante
+
+item.immersivemagneticraft.light_plates_iron.name=Piastra Di Ferro Leggera
+item.immersivemagneticraft.light_plates_gold.name=Piastra D'Oro Leggera
+item.immersivemagneticraft.light_plates_copper.name=Piastra Di Rame Leggera
+item.immersivemagneticraft.light_plates_lead.name=Piastra Di Piombo Leggera
+item.immersivemagneticraft.light_plates_cobalt.name=Piastra Di Cobalto Leggera
+item.immersivemagneticraft.light_plates_tungsten.name=Piastra Di Tungsteno Leggera
+item.immersivemagneticraft.light_plates_steel.name=Piastra Di Acciaio Leggera
+
+item.immersivemagneticraft.nuggets_copper.name=Pepita Di Rame
+item.immersivemagneticraft.nuggets_lead.name=Pepita Di Piombo
+item.immersivemagneticraft.nuggets_cobalt.name=Pepita Di Cobalto
+item.immersivemagneticraft.nuggets_tungsten.name=Pepita Di Tungsteno
+item.immersivemagneticraft.nuggets_steel.name=Pepita Di Acciaio
+item.immersivemagneticraft.nuggets_aluminium.name=Pepita Di Alluminio
+item.immersivemagneticraft.nuggets_silver.name=Pepita D'Argento
+item.immersivemagneticraft.nuggets_mithril.name=Pepita Di Mithril
+item.immersivemagneticraft.nuggets_tin.name=Pepita Di Stagno
+item.immersivemagneticraft.nuggets_zinc.name=Pepita Di Zinco
+item.immersivemagneticraft.nuggets_galena.name=Pepita Di Galena
+item.immersivemagneticraft.nuggets_osmium.name=Pepita Di Osmio
+item.immersivemagneticraft.nuggets_nickel.name=Pepita Di Nickel
+
+item.immersivemagneticraft.ingots_copper.name=Lingotto Di Rame
+item.immersivemagneticraft.ingots_lead.name=Lingotto Di Piombo
+item.immersivemagneticraft.ingots_cobalt.name=Lingotto Di Cobalto
+item.immersivemagneticraft.ingots_tungsten.name=Lingotto Di Tungsteno
+item.immersivemagneticraft.ingots_steel.name=Lingotto Di Acciaio
+item.immersivemagneticraft.ingots_aluminium.name=Lingotto Di Alluminio
+item.immersivemagneticraft.ingots_silver.name=Lingotto D'Argento
+item.immersivemagneticraft.ingots_mithril.name=Lingotto Di Mithril
+item.immersivemagneticraft.ingots_tin.name=Lingotto Di Stagno
+item.immersivemagneticraft.ingots_zinc.name=Lingotto Di Zinco
+item.immersivemagneticraft.ingots_osmium.name=Lingotto Di Osmio
+item.immersivemagneticraft.ingots_nickel.name=Lingotto Di Nickel
+
+item.immersivemagneticraft.chunks_iron.name=Pezzo Di Ferro
+item.immersivemagneticraft.chunks_gold.name=Pezzo D'Oro
+item.immersivemagneticraft.chunks_copper.name=Pezzo Di Rame
+item.immersivemagneticraft.chunks_lead.name=Pezzo Di Piombo
+item.immersivemagneticraft.chunks_cobalt.name=Pezzo Di Cobalto
+item.immersivemagneticraft.chunks_tungsten.name=Pezzo Di Tungsteno
+item.immersivemagneticraft.chunks_aluminium.name=Pezzo Di Alluminio
+item.immersivemagneticraft.chunks_silver.name=Pezzo D'Argento
+item.immersivemagneticraft.chunks_mithril.name=Pezzo Di Mithril
+item.immersivemagneticraft.chunks_tin.name=Pezzo Di Stagno
+item.immersivemagneticraft.chunks_zinc.name=Pezzo Di Zinco
+item.immersivemagneticraft.chunks_galena.name=Pezzo Di Galena
+item.immersivemagneticraft.chunks_osmium.name=Pezzo Di Osmio
+item.immersivemagneticraft.chunks_nickel.name=Pezzo Di Nickel
+
+item.immersivemagneticraft.rocky_chunks_iron.name=Pezzo Roccioso Di Ferro
+item.immersivemagneticraft.rocky_chunks_gold.name=Pezzo Roccioso D'Oro
+item.immersivemagneticraft.rocky_chunks_copper.name=Pezzo Roccioso Di Rame
+item.immersivemagneticraft.rocky_chunks_lead.name=Pezzo Roccioso Di Stagno
+item.immersivemagneticraft.rocky_chunks_cobalt.name=Pezzo Roccioso Di Cobalto
+item.immersivemagneticraft.rocky_chunks_tungsten.name=Pezzo Roccioso Di Tungsteno
+item.immersivemagneticraft.rocky_chunks_aluminium.name=Pezzo Roccioso Di Alluminio
+item.immersivemagneticraft.rocky_chunks_silver.name=Pezzo Roccioso D'Argento
+item.immersivemagneticraft.rocky_chunks_mithril.name=Pezzo Roccioso Di Mithril
+item.immersivemagneticraft.rocky_chunks_tin.name=Pezzo Roccioso Di Tin
+item.immersivemagneticraft.rocky_chunks_zinc.name=Pezzo Roccioso Di Zinco
+item.immersivemagneticraft.rocky_chunks_galena.name=Pezzo Roccioso Di Galena
+item.immersivemagneticraft.rocky_chunks_osmium.name=Pezzo Roccioso Di Osmio
+item.immersivemagneticraft.rocky_chunks_nickel.name=Pezzo Roccioso Di Nickel
+
+item.immersivemagneticraft.dusts_iron.name=Polvere Di Ferro
+item.immersivemagneticraft.dusts_gold.name=Polvere D'Oro
+item.immersivemagneticraft.dusts_copper.name=Polvere Di Rame
+item.immersivemagneticraft.dusts_lead.name=Polvere Di Piombo
+item.immersivemagneticraft.dusts_cobalt.name=Polvere Di Cobalto
+item.immersivemagneticraft.dusts_tungsten.name=Polvere Di Tungsteno
+item.immersivemagneticraft.dusts_steel.name=Polvere Di Acciaio
+item.immersivemagneticraft.dusts_aluminium.name=Polvere Di Alluminio
+item.immersivemagneticraft.dusts_silver.name=Polvere D'Argento
+item.immersivemagneticraft.dusts_mithril.name=Polvere Di Mithril
+item.immersivemagneticraft.dusts_tin.name=Polvere Di Stgno
+item.immersivemagneticraft.dusts_zinc.name=Polvere Di Zinco
+item.immersivemagneticraft.dusts_osmium.name=Polvere Di Osmio
+item.immersivemagneticraft.dusts_nickel.name=Polvere Di Nickel
+
+item.immersivemagneticraft.copper_coil_normal.name=Bobina Di Rame
+item.immersivemagneticraft.crafting_sulfur.name=Cristallo Di Zolfo
+item.immersivemagneticraft.crafting_coil.name=Bobina Di Rame Piccola
+item.immersivemagneticraft.crafting_alternator.name=Alternatore
+item.immersivemagneticraft.crafting_motor.name=Motore
+item.immersivemagneticraft.crafting_magnet.name=Magnete
+item.immersivemagneticraft.crafting_mesh.name=Maglia Di Ferro
+item.immersivemagneticraft.crafting_string_fabric.name=Tessuto
+item.immersivemagneticraft.voltmeter_normal.name=Voltimetero
+item.immersivemagneticraft.battery_item_low_normal.name=Batteria Piccola
+item.immersivemagneticraft.battery_item_medium_normal.name=Batteria Media
+
+item.immersivemagneticraft.floppy_disk_user.name=Disco Floppy
+item.immersivemagneticraft.floppy_disk_lisp.name=Disco Floppy (Lisp WIP)
+item.immersivemagneticraft.floppy_disk_forth.name=Disco Floppy (FORTH WIP)
+item.immersivemagneticraft.floppy_disk_shell.name=Disco Floppy (SHELL)
+item.immersivemagneticraft.floppy_disk_basic.name=Disco Floppy (BASIC WIP)
+item.immersivemagneticraft.floppy_disk_vim.name=Disco Floppy (VI? WIP)
+item.immersivemagneticraft.floppy_disk_asm.name=Disco Floppy (ASM WIP)
+
+item.immersivemagneticraft.iron_gear_normal.name=Ingranaggio Di Ferro
+item.immersivemagneticraft.steel_gear_normal.name=Ingranaggio Di Acciaio
+item.immersivemagneticraft.tungsten_gear_normal.name=Ingranaggio Di Tungsteno
+
+tile.immersivemagneticraft.ores_copper.name=Calcopirite Grezza
+tile.immersivemagneticraft.ores_lead.name=Galena Grezza
+tile.immersivemagneticraft.ores_cobalt.name=Cobalto Grezzo
+tile.immersivemagneticraft.ores_tungsten.name=Wolframite Grezza
+tile.immersivemagneticraft.ores_pyrite.name=Pirite Grezza
+tile.immersivemagneticraft.oil_source_full_100.name=Sorgente Di Petrolio (Full)
+tile.immersivemagneticraft.oil_source_full_90.name=Sorgente Di Petrolio (90%)
+tile.immersivemagneticraft.oil_source_full_80.name=Sorgente Di Petrolio
+tile.immersivemagneticraft.oil_source_full_70.name=Sorgente Di Petrolio (70%)
+tile.immersivemagneticraft.oil_source_full_60.name=Sorgente Di Petrolio (60%)
+tile.immersivemagneticraft.oil_source_full_50.name=Sorgente Di Petrolio (50%)
+tile.immersivemagneticraft.oil_source_full_40.name=Sorgente Di Petrolio (40%)
+tile.immersivemagneticraft.oil_source_full_30.name=Sorgente Di Petrolio (30%)
+tile.immersivemagneticraft.oil_source_full_20.name=Sorgente Di Petrolio (20%)
+tile.immersivemagneticraft.oil_source_full_10.name=Sorgente Di Petrolio (10%)
+tile.immersivemagneticraft.oil_source_empty.name=Sorgente Di Petrolio (Empty)
+
+tile.immersivemagneticraft.box_normal.name=Scatola Di Legno
+tile.immersivemagneticraft.crushing_table_normal.name=Tavolo Di Frantumazione
+tile.immersivemagneticraft.sluice_box_center_north.name=Setaccio Ad Acqua
+tile.immersivemagneticraft.feeding_trough_center_north.name=Mangiatoia
+#tile.immersivemagneticraft.kiln_shelf.name=Scaffale Del Forno
+
+tile.immersivemagneticraft.limestone_normal.name=Calcare
+tile.immersivemagneticraft.limestone_brick.name=Mattoni Calcarei
+tile.immersivemagneticraft.limestone_cobble.name=Pietre Calcaree
+tile.immersivemagneticraft.burnt_limestone_normal.name=Calcare Bruciato
+tile.immersivemagneticraft.burnt_limestone_brick.name=Mattoni Calcarei Bruciati
+tile.immersivemagneticraft.burnt_limestone_cobble.name=Pietre Calcaree Bruciate
+tile.immersivemagneticraft.tile_limestone_normal.name=Lastra Di Calcare
+tile.immersivemagneticraft.tile_limestone_inverted.name=Lastra Di Calcare Invertita
+tile.immersivemagneticraft.tube_light_north.name=Luce Al Neon
+
+tile.immersivemagneticraft.conveyor_belt_north.name=Nastro Trasportatore
+tile.immersivemagneticraft.inserter_north.name=Insertore
+tile.immersivemagneticraft.connector_down.name=Connetore Elettrico
+tile.immersivemagneticraft.battery_north.name=Blocco Batteria
+tile.immersivemagneticraft.electric_pole_north.name=Palo Elettrico
+tile.immersivemagneticraft.electric_pole_transformer_north.name=Trasformatore Palo Elettrico
+tile.immersivemagneticraft.electric_furnace_north.name=Fornace Elettrica
+tile.immersivemagneticraft.combustion_chamber_north.name=Camera Di Combustione
+tile.immersivemagneticraft.steam_boiler_normal.name=Caldaia
+tile.immersivemagneticraft.pumpjack_drill_normal.name=Pompa Petrolifera
+tile.immersivemagneticraft.electric_heater_off.name=Scaldatore Elettrico
+tile.immersivemagneticraft.electric_heater_on.name=Scaldatore Elettrico (Acceso)
+
+#tile.immersivemagneticraft.heat_pipe.name=Tubo Per Calore
+#tile.immersivemagneticraft.redstone_heat_pipe.name=Tubo Per Calore Di Pietrarossa
+#tile.immersivemagneticraft.firebox.name=Focolare
+#tile.immersivemagneticraft.icebox.name=Ghiacciaia
+#tile.immersivemagneticraft.heat_sink.name=Radiatore
+#tile.immersivemagneticraft.heat_reservoir.name=Riserva Di Calore
+#tile.immersivemagneticraft.thermometer_block.name=Termocoppia
+#tile.immersivemagneticraft.brick_furnace.name=Fornace Di Mattoni
+
+tile.immersivemagneticraft.water_generator_normal.name=Generatore Ad Acqua
+tile.immersivemagneticraft.infinite_energy_normal.name=Energia Infinita
+
+tile.immersivemagneticraft.airlock_normal.name=Camera Di Compensazione
+tile.immersivemagneticraft.air_bubble_on.name=Bolla D'Aria
+tile.immersivemagneticraft.air_bubble_off.name=Bolla D'Aria
+tile.immersivemagneticraft.computer_north.name=Computer
+tile.immersivemagneticraft.mining_robot_north.name=Robot Minatore
+tile.immersivemagneticraft.moving_robot_normal.name=Robot
+tile.immersivemagneticraft.copper_tank_normal.name=Serbatoio Di Rame
+tile.immersivemagneticraft.thermopile_normal.name=Termopila
+tile.immersivemagneticraft.iron_pipe_normal.name=Tubo In Ferro
+tile.immersivemagneticraft.wind_turbine_north.name=Pala Eolica
+
+# Multiblocks
+#tile.immersivemagneticraft.hydraulic_press.name=Pressa Idraulica
+#tile.immersivemagneticraft.kiln.name=Forno A Alveare
+tile.immersivemagneticraft.sieve_inactive_north.name=Setaccio
+tile.immersivemagneticraft.solar_panel_inactive_north.name=Pannello Solare
+tile.immersivemagneticraft.grinder_inactive_north.name=Macina
+tile.immersivemagneticraft.shelving_unit_inactive_north.name=Scaffalatura
+tile.immersivemagneticraft.steam_engine_inactive_north.name=Motore A Vapore
+tile.immersivemagneticraft.solar_tower_inactive_north.name=Torre Solare
+tile.immersivemagneticraft.solar_mirror_inactive_north.name=Specchio Solare
+tile.immersivemagneticraft.container_inactive_north.name=Container Da Spedizione
+tile.immersivemagneticraft.pumpjack_inactive_north.name=Pompa Petrolifera
+
+#tile.immersivemagneticraft.copper_block.name=Blocco di Copper
+#tile.immersivemagneticraft.cobalt_block.name=Blocco di Cobalto
+#tile.immersivemagneticraft.lead_block.name=Blocco di Lead
+#tile.immersivemagneticraft.tungsten_block.name=Blocco di Tungsteno
+
+tile.immersivemagneticraft.multiblock_parts_base.name=Blocco Macchina
+tile.immersivemagneticraft.multiblock_parts_mesh.name=Blocco Macchina Filtrante
+tile.immersivemagneticraft.multiblock_parts_electric.name=Blocco Macchina Elettrico
+tile.immersivemagneticraft.multiblock_parts_striped.name=Blocco Macchina Rigato
+tile.immersivemagneticraft.multiblock_parts_grate.name=Blocco Maccina Con Griglia Di Ferro
+tile.immersivemagneticraft.multiblock_parts_copper_coil.name=Blocco Macchina Con Bobina Di Rame
+tile.immersivemagneticraft.multiblock_parts_corrugated_iron.name=Blocco Macchina Di Ferro Ondulato
+tile.immersivemagneticraft.multiblock_column_axis_y.name=Colonna Di Supporto (Asse Y)
+tile.immersivemagneticraft.multiblock_column_axis_x.name=Colonna Di Suporto (Asse X)
+tile.immersivemagneticraft.multiblock_column_axis_z.name=Colonna Di Supporto (Asse Z)
+tile.immersivemagneticraft.multiblock_gap_normal.name=Multiblocco
+tile.immersivemagneticraft.multiblock_gap.name=Multiblocco
+
+itemgroup.immersivemagneticraft=immersivemagneticraft
+
+text.immersivemagneticraft.wire_connect.success=Cavo collegato
+text.immersivemagneticraft.wire_connect.fail=Impossibile collegare il cavo
+text.immersivemagneticraft.wire_connect.same_block=Impossibile collegare il cavo allo stesso blocco
+text.immersivemagneticraft.wire_connect.no_other_connector=Nessuna posizione impostata
+text.immersivemagneticraft.wire_connect.updated_position=Posizione aggiornata %s
+text.immersivemagneticraft.auto_connect.activate=Auto-connessione cavi attivata
+text.immersivemagneticraft.auto_connect.deactivate=Auto-connessione cavi disattivata
+
+text.immersivemagneticraft.jei.crushing_table=Tavolo Di Frantumaione
+text.immersivemagneticraft.jei.sluice_box=Setaccio Ad Acqua
+#text.immersivemagneticraft.jei.hydraulic_press=Pressa Idraulica
+#text.immersivemagneticraft.jei.kiln=Forno A Alveare
+text.immersivemagneticraft.jei.grinder=Macina
+text.immersivemagneticraft.jei.sieve=Setaccio
+
+text.immersivemagneticraft.multiblock.invalid_block=Blocco non valido a %s, trovato: %s, previsto: %s
+text.immersivemagneticraft.multiblock.activate=Attivato con successo
+
+#death.attack.kiln=%1$s ha camminato dentro a un forno.
+#death.attack.kiln.player=%1$s ha camminato dentro a un forno per cercare di scappare %2$s.
+#death.attack.kiln=%1$s è caduto dentro a un frullatore.
+#death.attack.kiln.player=%2$s ha spinto %1s$ dentro a un frullatore.
+
+tooltip.immersivemagneticraft.item_storage.energy=%f/%fJ
+tooltip.immersivemagneticraft.multiblock.blueprint=Piazza questo blueprint per vedere la struttura multiblocco
+
+fluid.immersivemagneticraft.steam=Vapore
+fluid.immersivemagneticraft.oil=Petrolio

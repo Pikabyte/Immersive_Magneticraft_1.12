@@ -15,7 +15,7 @@ import net.minecraft.client.Minecraft
  */
 object HydraulicPressRecipeCategory : IRecipeCategory<HydraulicPressRecipeWrapper> {
 
-    private val title = Translator.translateToLocal("text.immersive-magneticraft.jei.hydraulic_press")
+    private val title = Translator.translateToLocal("text.immersivemagneticraft.jei.hydraulic_press")
     private val background = DrawableResource(resource("textures/gui/jei/gui.png"), 128, 0, 64, 64, 5, 5, 25, 25)
 
     override fun drawAnimations(minecraft: Minecraft) {}

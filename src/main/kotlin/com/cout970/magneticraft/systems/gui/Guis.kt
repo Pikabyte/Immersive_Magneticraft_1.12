@@ -149,12 +149,12 @@ fun GuiBuilder.inserterGui(tile: TileInserter) {
         slotSpacer(1, 2)
 
         group(vec2Of(38, 58)) {
-            switchButton("btn0", "btn0_offset", "btn0_on", "btn0_off", t("gui.immersive-magneticraft.inserter.btn0"), t("gui.immersive-magneticraft.inserter.btn0_off"))
-            switchButton("btn1", "btn1_offset", "btn1_on", "btn1_off", t("gui.immersive-magneticraft.inserter.btn1"), t("gui.immersive-magneticraft.inserter.btn1_off"))
-            switchButton("btn2", "btn2_offset", "btn2_on", "btn2_off", t("gui.immersive-magneticraft.inserter.btn2"), t("gui.immersive-magneticraft.inserter.btn2_off"))
-            switchButton("btn3", "btn3_offset", "btn3_on", "btn3_off", t("gui.immersive-magneticraft.inserter.btn3"), t("gui.immersive-magneticraft.inserter.btn3_off"))
-            switchButton("btn4", "btn4_offset", "btn4_on", "btn4_off", t("gui.immersive-magneticraft.inserter.btn4"), t("gui.immersive-magneticraft.inserter.btn4_off"))
-            switchButton("btn5", "btn5_offset", "btn5_on", "btn5_off", t("gui.immersive-magneticraft.inserter.btn5"), t("gui.immersive-magneticraft.inserter.btn5_off"))
+            switchButton("btn0", "btn0_offset", "btn0_on", "btn0_off", t("gui.immersivemagneticraft.inserter.btn0"), t("gui.immersivemagneticraft.inserter.btn0_off"))
+            switchButton("btn1", "btn1_offset", "btn1_on", "btn1_off", t("gui.immersivemagneticraft.inserter.btn1"), t("gui.immersivemagneticraft.inserter.btn1_off"))
+            switchButton("btn2", "btn2_offset", "btn2_on", "btn2_off", t("gui.immersivemagneticraft.inserter.btn2"), t("gui.immersivemagneticraft.inserter.btn2_off"))
+            switchButton("btn3", "btn3_offset", "btn3_on", "btn3_off", t("gui.immersivemagneticraft.inserter.btn3"), t("gui.immersivemagneticraft.inserter.btn3_off"))
+            switchButton("btn4", "btn4_offset", "btn4_on", "btn4_off", t("gui.immersivemagneticraft.inserter.btn4"), t("gui.immersivemagneticraft.inserter.btn4_off"))
+            switchButton("btn5", "btn5_offset", "btn5_on", "btn5_off", t("gui.immersivemagneticraft.inserter.btn5"), t("gui.immersivemagneticraft.inserter.btn5_off"))
         }
     }
 }
@@ -191,9 +191,9 @@ fun GuiBuilder.hydraulicPressGui(tile: TileHydraulicPress) {
         drawable(Vec2d.ZERO, "arrow_offset", "arrow_size", "arrow_uv")
         slotSpacer()
         selectButton(vec2Of(18, 68), "btn0") {
-            option("opt0_offset", "opt0_background", t("gui.immersive-magneticraft.hydraulic_press.opt0"))
-            option("opt1_offset", "opt1_background", t("gui.immersive-magneticraft.hydraulic_press.opt1"))
-            option("opt2_offset", "opt2_background", t("gui.immersive-magneticraft.hydraulic_press.opt2"))
+            option("opt0_offset", "opt0_background", t("gui.immersivemagneticraft.hydraulic_press.opt0"))
+            option("opt1_offset", "opt1_background", t("gui.immersivemagneticraft.hydraulic_press.opt1"))
+            option("opt2_offset", "opt2_background", t("gui.immersivemagneticraft.hydraulic_press.opt2"))
         }
     }
 }
@@ -220,9 +220,9 @@ fun GuiBuilder.shelvingUnitGui(@Suppress("UNUSED_PARAMETER") tile: TileShelvingU
         clickButton("btn1", "button_offset")
         drawable("button_icon_pos", "button_icon_size", "button_icon_uv")
         selectButton("btn0") {
-            option("opt0_offset", "opt0_background", t("gui.immersive-magneticraft.shelving_unit.opt0"))
-            option("opt1_offset", "opt1_background", t("gui.immersive-magneticraft.shelving_unit.opt1"))
-            option("opt2_offset", "opt2_background", t("gui.immersive-magneticraft.shelving_unit.opt2"))
+            option("opt0_offset", "opt0_background", t("gui.immersivemagneticraft.shelving_unit.opt0"))
+            option("opt1_offset", "opt1_background", t("gui.immersivemagneticraft.shelving_unit.opt1"))
+            option("opt2_offset", "opt2_background", t("gui.immersivemagneticraft.shelving_unit.opt2"))
         }
     }
 }

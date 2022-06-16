@@ -1,0 +1,319 @@
+#Translated By Rockefeller157
+
+item.immersivemagneticraft.guide_book_normal.name=Guide immersivemagneticraft
+
+item.immersivemagneticraft.iron_hammer_normal.name=Marteau en fer
+item.immersivemagneticraft.stone_hammer_normal.name=Marteau en pierre
+item.immersivemagneticraft.steel_hammer_normal.name=Marteau en acier
+
+item.immersivemagneticraft.heavy_plates_iron.name=Plaque de fer épaisse
+item.immersivemagneticraft.heavy_plates_gold.name=Plaque d'or épaisse
+item.immersivemagneticraft.heavy_plates_copper.name=Plaque de cuivre épaisse
+item.immersivemagneticraft.heavy_plates_lead.name=Plaque de plomb épaisse
+item.immersivemagneticraft.heavy_plates_cobalt.name=Plaque de Cobalt épaisse
+item.immersivemagneticraft.heavy_plates_tungsten.name=Plaque de tungsten épaisse
+item.immersivemagneticraft.heavy_plates_steel.name=Plaque d'acier épaisse
+
+item.immersivemagneticraft.light_plates_iron.name=Plaque de fer fine
+item.immersivemagneticraft.light_plates_gold.name=Plaque d'or fine
+item.immersivemagneticraft.light_plates_copper.name=Plaque de cuivre fine
+item.immersivemagneticraft.light_plates_lead.name=Plaque de plomb fine
+item.immersivemagneticraft.light_plates_cobalt.name=Plaque de cobalt fine
+item.immersivemagneticraft.light_plates_tungsten.name=Plaque de tungsten fine
+item.immersivemagneticraft.light_plates_steel.name=Plaque d'acier fine
+
+item.immersivemagneticraft.nuggets_copper.name=Pépite de cuivre
+item.immersivemagneticraft.nuggets_lead.name=Pépite de plomb
+item.immersivemagneticraft.nuggets_cobalt.name=Pépite de cobalt
+item.immersivemagneticraft.nuggets_tungsten.name=Pépite de tungsten
+item.immersivemagneticraft.nuggets_steel.name=Pépite d'acier
+item.immersivemagneticraft.nuggets_aluminium.name=Pépite d'aluminium
+item.immersivemagneticraft.nuggets_silver.name=Pépite d'argent
+item.immersivemagneticraft.nuggets_mithril.name=Pépite de Mithril
+item.immersivemagneticraft.nuggets_tin.name=Pépite d'étain
+item.immersivemagneticraft.nuggets_zinc.name=Pépite de zinc
+item.immersivemagneticraft.nuggets_galena.name=Pépite de Galena
+item.immersivemagneticraft.nuggets_osmium.name=Pépite d'Osmium
+item.immersivemagneticraft.nuggets_nickel.name=Pépite de nickel
+
+item.immersivemagneticraft.ingots_copper.name=Lingot de cuivre
+item.immersivemagneticraft.ingots_lead.name=Lingot de plomb
+item.immersivemagneticraft.ingots_cobalt.name=Lingot de cobalt
+item.immersivemagneticraft.ingots_tungsten.name=Lingot de tungsten
+item.immersivemagneticraft.ingots_steel.name=Lingot d'acier
+item.immersivemagneticraft.ingots_aluminium.name=Lingot d'aluminium
+item.immersivemagneticraft.ingots_silver.name=Lingot d'argent
+item.immersivemagneticraft.ingots_mithril.name=Lingot de mithril
+item.immersivemagneticraft.ingots_tin.name=Lingot d'étain
+item.immersivemagneticraft.ingots_zinc.name=Lingot de zinc
+item.immersivemagneticraft.ingots_osmium.name=Lingot d'osmium
+item.immersivemagneticraft.ingots_nickel.name=Lingot de nickel
+
+item.immersivemagneticraft.chunks_iron.name=Eclats de fer
+item.immersivemagneticraft.chunks_gold.name=Eclats d'or
+item.immersivemagneticraft.chunks_copper.name=Eclats de cuivre
+item.immersivemagneticraft.chunks_lead.name=Eclats de plomb
+item.immersivemagneticraft.chunks_cobalt.name=Eclats de cobalt
+item.immersivemagneticraft.chunks_tungsten.name=Eclats de tungsten
+item.immersivemagneticraft.chunks_aluminium.name=Eclats d'aluminium
+item.immersivemagneticraft.chunks_silver.name=Eclats d'argent
+item.immersivemagneticraft.chunks_mithril.name=Eclats de mithril
+item.immersivemagneticraft.chunks_tin.name=Eclats d'étain
+item.immersivemagneticraft.chunks_zinc.name=Eclats de zinc
+item.immersivemagneticraft.chunks_galena.name=Eclats de galena
+item.immersivemagneticraft.chunks_osmium.name=Eclats d'osmium
+item.immersivemagneticraft.chunks_nickel.name=Eclats de nickel
+
+item.immersivemagneticraft.rocky_chunks_iron.name=Eclats de fer sales
+item.immersivemagneticraft.rocky_chunks_gold.name=Eclats d'or sales
+item.immersivemagneticraft.rocky_chunks_copper.name=Eclats de cuivre sales
+item.immersivemagneticraft.rocky_chunks_lead.name=Eclats de plomb sales
+item.immersivemagneticraft.rocky_chunks_cobalt.name=Eclats de cobalt sales
+item.immersivemagneticraft.rocky_chunks_tungsten.name=Eclats de tungsten sales
+item.immersivemagneticraft.rocky_chunks_aluminium.name=Eclats d'aluminium sales
+item.immersivemagneticraft.rocky_chunks_silver.name=Eclats d'argent sales
+item.immersivemagneticraft.rocky_chunks_mithril.name=Eclats de mithril sales
+item.immersivemagneticraft.rocky_chunks_tin.name=Eclats d'étain sales
+item.immersivemagneticraft.rocky_chunks_zinc.name=Eclats de zinc sales
+item.immersivemagneticraft.rocky_chunks_galena.name=Eclats de galena sales
+item.immersivemagneticraft.rocky_chunks_osmium.name=Eclats d'osmium sales
+item.immersivemagneticraft.rocky_chunks_nickel.name=Eclats de nickel sales
+
+item.immersivemagneticraft.dusts_iron.name=Poudre de fer
+item.immersivemagneticraft.dusts_gold.name=Poudre d'or
+item.immersivemagneticraft.dusts_copper.name=Poudre de cuivre
+item.immersivemagneticraft.dusts_lead.name=Poudre de plomb
+item.immersivemagneticraft.dusts_cobalt.name=Poudre de cobalt
+item.immersivemagneticraft.dusts_tungsten.name=Poudre de tungsten
+item.immersivemagneticraft.dusts_steel.name=Poudre d'acier
+item.immersivemagneticraft.dusts_aluminium.name=Poudre d'aluminium
+item.immersivemagneticraft.dusts_silver.name=Poudre d'argent
+item.immersivemagneticraft.dusts_mithril.name=Poudre de mithril
+item.immersivemagneticraft.dusts_tin.name=Poudre d'étain
+item.immersivemagneticraft.dusts_zinc.name=Poudre de zinc
+item.immersivemagneticraft.dusts_osmium.name=Poudre d'osmium
+item.immersivemagneticraft.dusts_nickel.name=Poudre de nickel
+
+item.immersivemagneticraft.copper_coil_normal.name=Fil de cuivre
+item.immersivemagneticraft.crafting_sulfur.name=crystaux de soufre
+item.immersivemagneticraft.crafting_coil.name=Petit fil de cuivre
+item.immersivemagneticraft.crafting_alternator.name=Alternateur
+item.immersivemagneticraft.crafting_motor.name=Moteur
+item.immersivemagneticraft.crafting_magnet.name=Aimant
+item.immersivemagneticraft.crafting_mesh.name=Maile de fer
+item.immersivemagneticraft.crafting_string_fabric.name=Maille de tissu
+item.immersivemagneticraft.voltmeter_normal.name=Voltmètre
+item.immersivemagneticraft.thermometer_normal.name=Thermomètre
+item.immersivemagneticraft.wrench_normal.name=Clé anglaise
+item.immersivemagneticraft.battery_item_low_normal.name=Petite batterie
+item.immersivemagneticraft.battery_item_medium_normal.name=Batterie moyenne
+
+item.immersivemagneticraft.floppy_disk_user.name=Disquette
+item.immersivemagneticraft.floppy_disk_lisp.name=Disquette (Lisp)
+item.immersivemagneticraft.floppy_disk_forth.name=Disquette (FORTH)
+item.immersivemagneticraft.floppy_disk_shell.name=Disquette (Shell)
+item.immersivemagneticraft.floppy_disk_basic.name=Disquette (BASIC WIP)
+item.immersivemagneticraft.floppy_disk_editor.name=Disquette (éditeur)
+item.immersivemagneticraft.floppy_disk_asm.name=Disquette (ASM WIP)
+
+item.immersivemagneticraft.iron_gear_normal.name=Engrenage en fer
+item.immersivemagneticraft.steel_gear_normal.name=Engrenage en acier
+item.immersivemagneticraft.tungsten_gear_normal.name=Engrenage en tungsten
+item.immersivemagneticraft.broken_gear_normal.name=Engrenage cassés
+
+item.immersivemagneticraft.inserter_upgrade_speed.name=Inserter Upgrade: Vitesse
+item.immersivemagneticraft.inserter_upgrade_stack.name=Inserter Upgrade: Capacité
+
+tile.immersivemagneticraft.ores_copper.name=Minerai de chalcopyrite
+tile.immersivemagneticraft.ores_lead.name=Minerai de galena
+tile.immersivemagneticraft.ores_cobalt.name=Minerai de cobaltite
+tile.immersivemagneticraft.ores_tungsten.name=Minerai de wolframite
+tile.immersivemagneticraft.ores_pyrite.name=Minerai de pyrite
+tile.immersivemagneticraft.oil_source_full_100.name=Source de pétrole (Pleine)
+tile.immersivemagneticraft.oil_source_full_90.name=Source de pétrole (90%)
+tile.immersivemagneticraft.oil_source_full_80.name=Source de pétrole (80%)
+tile.immersivemagneticraft.oil_source_full_70.name=Source de pétrole (70%)
+tile.immersivemagneticraft.oil_source_full_60.name=Source de pétrole (60%)
+tile.immersivemagneticraft.oil_source_full_50.name=Source de pétrole (50%)
+tile.immersivemagneticraft.oil_source_full_40.name=Source de pétrole (40%)
+tile.immersivemagneticraft.oil_source_full_30.name=Source de pétrole (30%)
+tile.immersivemagneticraft.oil_source_full_20.name=Source de pétrole (20%)
+tile.immersivemagneticraft.oil_source_full_10.name=Source de pétrole (10%)
+tile.immersivemagneticraft.oil_source_empty.name=Source de pétrole (Vide)
+
+tile.immersivemagneticraft.box_normal.name=Boîte en bois
+tile.immersivemagneticraft.crushing_table_normal.name=Table de concassage
+tile.immersivemagneticraft.sluice_box_center_north.name=Tamis
+tile.immersivemagneticraft.feeding_trough_center_north.name=Mangeoire en bois
+#tile.immersivemagneticraft.kiln_shelf.name=Kiln Shelf
+
+tile.immersivemagneticraft.limestone_normal.name=Calcaire
+tile.immersivemagneticraft.limestone_brick.name=Briques de calcaire
+tile.immersivemagneticraft.limestone_cobble.name=Pierre de calcaire
+tile.immersivemagneticraft.burnt_limestone_normal.name=Calcaire cuit
+tile.immersivemagneticraft.burnt_limestone_brick.name=Briques de calcaire cuites
+tile.immersivemagneticraft.burnt_limestone_cobble.name=Pierre de calcaire cuite
+tile.immersivemagneticraft.tile_limestone_normal.name=Dalles de calcaire
+tile.immersivemagneticraft.tile_limestone_inverted.name=Dalles de calcaire inversées
+tile.immersivemagneticraft.tube_light_north.name=Néon
+
+tile.immersivemagneticraft.conveyor_belt_north.name=Tapis roulant
+tile.immersivemagneticraft.inserter_north.name=Bras robotisé
+tile.immersivemagneticraft.connector_down.name=Connecteur électrique
+tile.immersivemagneticraft.battery_north.name=Bloc de batteries
+tile.immersivemagneticraft.electric_pole_north.name=Poteau électrique
+tile.immersivemagneticraft.electric_pole_transformer_north.name=Poteau électrique avec transformateur
+tile.immersivemagneticraft.electric_furnace_off_north.name=Four électrique
+tile.immersivemagneticraft.brick_furnace_off_north.name=Four en briques
+tile.immersivemagneticraft.combustion_chamber_north.name=Chambre de combustion
+tile.immersivemagneticraft.steam_boiler_normal.name=Chaudière
+tile.immersivemagneticraft.pumpjack_drill_normal.name=Tuyau pour chevalet de pompage
+tile.immersivemagneticraft.electric_heater_off.name=Chauffage électrique
+tile.immersivemagneticraft.electric_heater_on.name=Chauffage électrique (allumé)
+tile.immersivemagneticraft.gasification_unit_normal.name=Unité de gazéification
+tile.immersivemagneticraft.tesla_tower_bottom.name=Tour tesla
+tile.immersivemagneticraft.rf_transformer_normal.name=Transformateur de RF
+
+tile.immersivemagneticraft.water_generator_normal.name=Générateur d'eau (Créatif uniquement)
+tile.immersivemagneticraft.infinite_energy_normal.name=Générateur électrique (Créatif uniquement)
+
+tile.immersivemagneticraft.airlock_normal.name=Sas
+tile.immersivemagneticraft.air_bubble_on.name=Bulle d'air
+tile.immersivemagneticraft.air_bubble_off.name=Bulle d'air
+tile.immersivemagneticraft.computer_north.name=Ordinateur
+tile.immersivemagneticraft.mining_robot_north.name=Robot mineur
+tile.immersivemagneticraft.moving_robot_normal.name=Robot
+tile.immersivemagneticraft.small_tank_normal.name=Petit réservoir
+tile.immersivemagneticraft.thermopile_normal.name=Thermopile
+tile.immersivemagneticraft.iron_pipe_normal.name=Tuyau en fer
+tile.immersivemagneticraft.wind_turbine_north.name=Eolienne
+tile.immersivemagneticraft.heat_sink_down.name=Dissipateur thermique
+tile.immersivemagneticraft.heat_pipe_normal.name=Conduit de chaleur
+tile.immersivemagneticraft.insulated_heat_pipe_normal.name=Conduit de chaleur (isolé)
+tile.immersivemagneticraft.rf_heater_off.name=Chauffage au RF
+tile.immersivemagneticraft.electric_cable_normal.name=Cable électrique
+tile.immersivemagneticraft.pneumatic_tube_normal.name=Tube pneumatique
+tile.immersivemagneticraft.pneumatic_restriction_tube_normal.name=Tube pneumatique avec restrictions
+tile.immersivemagneticraft.relay_down.name=Relai
+tile.immersivemagneticraft.filter_down.name=Filtre
+tile.immersivemagneticraft.transposer_down.name=Transpondeur
+tile.immersivemagneticraft.fabricator_normal.name=Etabli automatique
+
+# Multiblocks
+tile.immersivemagneticraft.sieve_inactive_north.name=Sieve
+tile.immersivemagneticraft.solar_panel_inactive_north.name=Panneau photovoltaïque
+tile.immersivemagneticraft.grinder_inactive_north.name=Broyeur
+tile.immersivemagneticraft.shelving_unit_inactive_north.name=Etagère
+tile.immersivemagneticraft.steam_engine_inactive_north.name=Petit moteur à vapeur
+tile.immersivemagneticraft.solar_tower_inactive_north.name=Tour solaire
+tile.immersivemagneticraft.solar_mirror_inactive_north.name=Miroir solaire
+tile.immersivemagneticraft.container_inactive_north.name=Conteneur
+tile.immersivemagneticraft.pumpjack_inactive_north.name=Chevalet de pompage
+tile.immersivemagneticraft.hydraulic_press_inactive_north.name=Presse hydraulique
+tile.immersivemagneticraft.oil_heater_inactive_north.name=Chaufeur de pétrole
+tile.immersivemagneticraft.refinery_inactive_north.name=Raffinerie
+tile.immersivemagneticraft.big_combustion_chamber_inactive_north.name=Grande chambre de combustion
+tile.immersivemagneticraft.big_steam_boiler_inactive_north.name=Grande chaudière à vapeur
+
+# Ingot blocks
+tile.immersivemagneticraft.storage_blocks_copper.name=Bloc de cuivre
+tile.immersivemagneticraft.storage_blocks_cobalt.name=Bloc de cobalt
+tile.immersivemagneticraft.storage_blocks_lead.name=Bloc de plomb
+tile.immersivemagneticraft.storage_blocks_tungsten.name=Bloc de tungsten
+tile.immersivemagneticraft.storage_blocks_pyrite.name=Bloc de soufre
+
+# Multiblock parts
+tile.immersivemagneticraft.multiblock_parts_base.name=Bloc de machinerie
+tile.immersivemagneticraft.multiblock_parts_mesh.name=Bloc de machinerie filtrant
+tile.immersivemagneticraft.multiblock_parts_electric.name=Bloc de machinerie électrique
+tile.immersivemagneticraft.multiblock_parts_striped.name=Bloc de machinerie rayé
+tile.immersivemagneticraft.multiblock_parts_grate.name=Bloc de machinerie en grilles de fer
+tile.immersivemagneticraft.multiblock_parts_copper_coil.name=Bloc de machinerie à bobine de cuivre
+tile.immersivemagneticraft.multiblock_parts_corrugated_iron.name=Bloc de machinerie en tôle ondulée
+tile.immersivemagneticraft.multiblock_column_axis_y.name=Colonne de support (axe Y)
+tile.immersivemagneticraft.multiblock_column_axis_x.name=Colonne de support (axe X)
+tile.immersivemagneticraft.multiblock_column_axis_z.name=Colonne de support (axe Z)
+tile.immersivemagneticraft.multiblock_gap_normal.name=Multibloc
+tile.immersivemagneticraft.multiblock_gap.name=Multibloc
+
+# Creative tab
+itemGroup.immersivemagneticraft=immersivemagneticraft
+
+# Connection messages
+text.immersivemagneticraft.wire_connect.success=Fil connecté
+text.immersivemagneticraft.wire_connect.fail=Impossible de connecter le fil
+text.immersivemagneticraft.wire_connect.same_block=Impossible de connecter le fil sur le même bloc
+text.immersivemagneticraft.wire_connect.invalid_connector=Impossible de connecter le fil sur ce type de connecteur
+text.immersivemagneticraft.wire_connect.not_a_connector=Impossible de connecter le fil sur ce type de bloc
+text.immersivemagneticraft.wire_connect.too_far=Impossible de connecter le fil aussi loin
+text.immersivemagneticraft.wire_connect.already_connected=Fil déjà connecté
+
+text.immersivemagneticraft.wire_connect.no_other_connector=Pas de position définie
+text.immersivemagneticraft.wire_connect.updated_position=Mise mise à jour %s
+text.immersivemagneticraft.auto_connect.activate=Connexion de fil automatique activée
+text.immersivemagneticraft.auto_connect.deactivate=Connexion de fil automatique désactivée
+
+text.immersivemagneticraft.wire_connect.position=Position
+text.immersivemagneticraft.thermometer.temp=Temp: %s
+
+# JEI
+text.immersivemagneticraft.jei.crushing_table=Table de concassage
+text.immersivemagneticraft.jei.sluice_box=Ecluse
+text.immersivemagneticraft.jei.hydraulic_press=Presse hydraulique
+text.immersivemagneticraft.jei.grinder=Broyeur
+text.immersivemagneticraft.jei.sieve=Tamis
+text.immersivemagneticraft.jei.oil_heater=Chaufeur de pétrole
+text.immersivemagneticraft.jei.refinery=Raffinerie
+text.immersivemagneticraft.jei.gasification_unit=Unité de gazéification
+text.immersivemagneticraft.jei.thermopile=Thermopile
+
+#Mining level
+text.immersivemagneticraft.jei.mining_level.-1=Mining Level: Tous
+text.immersivemagneticraft.jei.mining_level.0=Mining Level: Bois
+text.immersivemagneticraft.jei.mining_level.1=Mining Level: Pierre
+text.immersivemagneticraft.jei.mining_level.2=Mining Level: Fer
+text.immersivemagneticraft.jei.mining_level.3=Mining Level: Diamant
+text.immersivemagneticraft.jei.mining_level.4=Mining Level: Ardite
+text.immersivemagneticraft.jei.mining_level.other=Mining Level: %s
+
+
+text.immersivemagneticraft.jei.time=%s ticks
+text.immersivemagneticraft.jei.require_water=Nécessite un(1) seau d'eau
+text.immersivemagneticraft.jei.temperature=Temperature: %s
+text.immersivemagneticraft.jei.head_conductivity=Conductivite: %.1f W/mK
+
+text.immersivemagneticraft.jei.hydraulic_hammer.light=Mode léger
+text.immersivemagneticraft.jei.hydraulic_hammer.medium=Mode normal
+text.immersivemagneticraft.jei.hydraulic_hammer.heavy=Mode lourd
+
+# Multiblock messages
+text.immersivemagneticraft.multiblock.invalid_block=Bloc invalide à la position %s\nTrouvé: %s\nAttendu: %s
+text.immersivemagneticraft.multiblock.invalid_column_orientation=Orientation de bloc inavlide à la position %s\nBloc trouvé: %s\nOrientation attendue: %s
+text.immersivemagneticraft.multiblock.activate=Activé avec succès
+
+# Item tooltips
+tooltip.immersivemagneticraft.item_storage.energy=%f/%fJ
+tooltip.immersivemagneticraft.multiblock.blueprint=Placez ce plan pour voir le modèle du multibloc
+
+# Fluids
+fluid.immersivemagneticraft.steam=Vapeur
+fluid.immersivemagneticraft.oil=Pétrole brut
+fluid.immersivemagneticraft.hot_crude=Pétrole brut chaud
+
+fluid.immersivemagneticraft.light_oil=Pétrole léger
+fluid.immersivemagneticraft.heavy_oil=Pétrole lourd
+fluid.immersivemagneticraft.lpg=Gaz de pétrole liquéfié
+
+fluid.immersivemagneticraft.natural_gas=Gaz naturel
+fluid.immersivemagneticraft.naphtha=Naphtha
+fluid.immersivemagneticraft.plastic=Plastique liquide
+
+fluid.immersivemagneticraft.diesel=Diesel
+fluid.immersivemagneticraft.kerosene=Kerosene
+fluid.immersivemagneticraft.gasoline=Gasoil
+
+fluid.immersivemagneticraft.lubricant=Lubrifiant
+fluid.immersivemagneticraft.fuel=Carburant
+fluid.immersivemagneticraft.oil_residue=Résidus de pétrole
+
+fluid.immersivemagneticraft.wood_gas=Gaz de bois

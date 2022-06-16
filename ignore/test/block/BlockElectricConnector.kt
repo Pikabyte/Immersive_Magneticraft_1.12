@@ -60,10 +60,10 @@ object BlockElectricConnector : BlockMultiState(Material.IRON,
                     if (worldIn.isServer) {
                         if (trait.autoConnectWires) {
                             playerIn.addChatComponentMessage(
-                                    TextComponentTranslation("text.immersive-magneticraft.auto_connect.activate"))
+                                    TextComponentTranslation("text.immersivemagneticraft.auto_connect.activate"))
                         } else {
                             playerIn.addChatComponentMessage(
-                                    TextComponentTranslation("text.immersive-magneticraft.auto_connect.deactivate"))
+                                    TextComponentTranslation("text.immersivemagneticraft.auto_connect.deactivate"))
                         }
                     }
                     return true

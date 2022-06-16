@@ -21,7 +21,7 @@ class MainBlockComponent(
         val pos = context.center + relativePos
         val state = context.world.getBlockState(pos)
         if (state.block != block) {
-            val keyStr = "text.immersive-magneticraft.multiblock.invalid_block"
+            val keyStr = "text.immersivemagneticraft.multiblock.invalid_block"
             val vecStr = "[%d, %d, %d]".format(pos.x, pos.y, pos.z)
             return listOf(keyStr.i18n(vecStr, state.prettyFormat(), block.localizedName))
         }

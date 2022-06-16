@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack
 import stanhebben.zenscript.annotations.ZenClass
 import stanhebben.zenscript.annotations.ZenMethod
 
-@ZenClass("mods.magneticraft.Sieve")
+@ZenClass("mods.immersivemagneticraft.Sieve")
 @ZenRegister
 object Sieve {
 

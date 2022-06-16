@@ -60,17 +60,17 @@ object ItemCoilOfWire : ItemMod("coil_of_wire") {
                     val basePos = stack.getBlockPos(POSITION_KEY)
                     if (handler.connectWire(basePos, pos, worldIn, playerIn, facing, stack)) {
                         if (worldIn.isServer) {
-                            playerIn.addChatComponentMessage(TextComponentTranslation("text.immersive-magneticraft.wire_connect.success"))
+                            playerIn.addChatComponentMessage(TextComponentTranslation("text.immersivemagneticraft.wire_connect.success"))
                         }
                     } else {
                         if (worldIn.isServer) {
-                            playerIn.addChatComponentMessage(TextComponentTranslation("text.immersive-magneticraft.wire_connect.fail"))
+                            playerIn.addChatComponentMessage(TextComponentTranslation("text.immersivemagneticraft.wire_connect.fail"))
                         }
                     }
                     return EnumActionResult.SUCCESS
                 } else {
                     if (worldIn.isServer) {
-                        playerIn.addChatComponentMessage(TextComponentTranslation("text.immersive-magneticraft.wire_connect.no_other_connector"))
+                        playerIn.addChatComponentMessage(TextComponentTranslation("text.immersivemagneticraft.wire_connect.no_other_connector"))
                     }
                 }
             }

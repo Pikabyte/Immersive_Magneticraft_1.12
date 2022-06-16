@@ -1,0 +1,32 @@
+{
+  "type": "forge:ore_shaped",
+  "mirrored": false,
+  "pattern": [
+    " DC",
+    "AAA",
+    "BBB"
+  ],
+  "key": {
+    "A": {
+      "type": "forge:ore_dict",
+      "ore": "dyeBlue"
+    },
+    "B": {
+      "type": "forge:ore_dict",
+      "ore": "paper"
+    },
+    "C": {
+      "item": "immersiveengineering:tool",
+      "data": 0,
+      "count" : 0
+    },
+    "D": {
+      "item": "immersiveengineering:metal_decoration0",
+      "data": 3
+    }
+  },
+  "result": {
+    "item": "immersivemagneticraft:steam_engine",
+    "data": 0
+  }
+}

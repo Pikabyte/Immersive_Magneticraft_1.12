@@ -1,0 +1,27 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "cube_all",
+        "transform": "forge:default-block",
+        "textures": {
+            "all": "immersivemagneticraft:blocks/multiblocks/unmounted_multiblock"
+        }
+    },
+    "variants": {
+        "inactive_north": [{}],
+        "inactive_south": [{}],
+        "inactive_east": [{}],
+        "inactive_west": [{}],
+        "active_north": [{ "model": "immersivemagneticraft:empty" }],
+        "active_south": [{ "model": "immersivemagneticraft:empty" }],
+        "active_east": [{ "model": "immersivemagneticraft:empty" }],
+        "active_west": [{ "model": "immersivemagneticraft:empty" }],
+        "inventory": [{
+            "model": "builtin/generated",
+            "transform": "forge:default-item",
+            "textures": {
+                "layer0": "immersivemagneticraft:blocks/multiblocks/pattern"
+            }
+        }]
+    }
+}

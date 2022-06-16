@@ -43,7 +43,7 @@ abstract class ItemStorage(registryName: String,
     }
 
     override fun addInformation(stack: ItemStack?, playerIn: EntityPlayer?, tooltip: MutableList<String>?, advanced: Boolean) {
-        tooltip?.add(TextComponentTranslation("tooltip.immersive-magneticraft.item_storage.energy", getStoredEnergyInternal(stack), Config.itemBatteryCapacity).unformattedComponentText)
+        tooltip?.add(TextComponentTranslation("tooltip.immersivemagneticraft.item_storage.energy", getStoredEnergyInternal(stack), Config.itemBatteryCapacity).unformattedComponentText)
         super.addInformation(stack, playerIn, tooltip, advanced)
     }
 

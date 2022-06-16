@@ -12,7 +12,7 @@ import stanhebben.zenscript.annotations.ZenMethod
  * Created by cout970 on 2017/08/11.
  */
 
-@ZenClass("mods.magneticraft.CrushingTable")
+@ZenClass("mods.immersivemagneticraft.CrushingTable")
 @ZenRegister
 object CrushingTable {
 

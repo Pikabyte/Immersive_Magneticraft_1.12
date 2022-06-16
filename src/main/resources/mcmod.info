@@ -1,6 +1,6 @@
 [
     {
-        "modid": "immersive-magneticraft",
+        "modid": "immersivemagneticraft",
         "name": "Magneticraft",
         "description": "Magneticraft: Energy, Industries and Multiblocks!",
         "version": "${version}",
@@ -11,7 +11,7 @@
             "Cout970", "MechWarrior99", "Minecreatr", "MattDahEpic", "Cypher121"
         ],
         "credits": "By Magneticraft Team: Cout970, Cypher121, Minecreatr, MattDahEpic (Developers) and MechWarrior99 (Artist)",
-        "logoFile": "assets/immersive-magneticraft/textures/gui/guide/logo.png",
+        "logoFile": "assets/immersivemagneticraft/textures/gui/guide/logo.png",
         "screenshots": [ ],
         "requiredMods": [ ],
         "dependencies": [ "Forgelin", "ModelLoader" ]

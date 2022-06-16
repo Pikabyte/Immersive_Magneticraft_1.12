@@ -10,7 +10,7 @@ import stanhebben.zenscript.annotations.ZenMethod
  * Created by cout970 on 2017/08/11.
  */
 
-@ZenClass("mods.magneticraft.SluiceBox")
+@ZenClass("mods.immersivemagneticraft.SluiceBox")
 @ZenRegister
 object SluiceBox {
 

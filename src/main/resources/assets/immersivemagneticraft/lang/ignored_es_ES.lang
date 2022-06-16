@@ -1,0 +1,110 @@
+item.immersivemagneticraft.guide_book.name=Manual de Instrucciones de immersivemagneticraft
+item.immersivemagneticraft.iron_hammer.name=Martillo de Hierro
+item.immersivemagneticraft.stone_hammer.name=Martillo de Piedra
+
+item.immersivemagneticraft.crushed_ore_iron.name=Trozo de Hierro
+item.immersivemagneticraft.crushed_ore_gold.name=Trozo de Oro
+item.immersivemagneticraft.crushed_ore_copper.name=Trozo de Cobre
+item.immersivemagneticraft.crushed_ore_lead.name=Trozo de Estaño
+item.immersivemagneticraft.crushed_ore_cobalt.name=Trozo de Cobalto
+item.immersivemagneticraft.crushed_ore_tungsten.name=Trozo de Tungsteno
+
+item.immersivemagneticraft.pebbles_iron.name=Guijarro de Hierro
+item.immersivemagneticraft.pebbles_gold.name=Guijaro de Oro
+item.immersivemagneticraft.pebbles_copper.name=Guijarro de Cobre
+item.immersivemagneticraft.pebbles_lead.name=Guijarro de Estaño
+item.immersivemagneticraft.pebbles_cobalt.name=Guijarro de Cobalto
+item.immersivemagneticraft.pebbles_tungsten.name=Guijarro de Tungsteno
+
+item.immersivemagneticraft.heavy_plate_iron.name=Placa Doble de Hierro
+item.immersivemagneticraft.heavy_plate_gold.name=Placa Doble de Oro
+item.immersivemagneticraft.heavy_plate_copper.name=Placa Doble de Cobre
+item.immersivemagneticraft.heavy_plate_lead.name=Placa Doble de Estaño
+item.immersivemagneticraft.heavy_plate_cobalt.name=Placa Doble de Cobalto
+item.immersivemagneticraft.heavy_plate_tungsten.name=Placa Doble de Tungsteno
+
+item.immersivemagneticraft.light_plate_iron.name=Placa Simple de Hierro
+item.immersivemagneticraft.light_plate_gold.name=Placa Simple de Oro
+item.immersivemagneticraft.light_plate_copper.name=Placa Simple de Cobre
+item.immersivemagneticraft.light_plate_lead.name=Placa Simple de Estaño
+item.immersivemagneticraft.light_plate_cobalt.name=Placa Simple de Cobalto
+item.immersivemagneticraft.light_plate_tungsten.name=Placa Simple de Tungsteno
+
+item.immersivemagneticraft.nugget_iron.name=Pepita de Hierro
+item.immersivemagneticraft.nugget_gold.name=Pepita de Oro
+item.immersivemagneticraft.nugget_copper.name=Pepita de Cobre
+item.immersivemagneticraft.nugget_lead.name=Pepita de Estaño
+item.immersivemagneticraft.nugget_cobalt.name=Pepita de Cobalto
+item.immersivemagneticraft.nugget_tungsten.name=Pepita de Tungsteno
+
+item.immersivemagneticraft.ingot_copper.name=Lingote de Cobre
+item.immersivemagneticraft.ingot_lead.name=Lingote de Estaño
+item.immersivemagneticraft.ingot_cobalt.name=Lingote de Cobalto
+item.immersivemagneticraft.ingot_tungsten.name=Lingote de Tungsteno
+
+item.immersivemagneticraft.hand_sieve.name=Tamiz Portatil
+item.immersivemagneticraft.coil_of_wire.name=Bobina de cobre
+item.immersivemagneticraft.voltmeter.name=Voltimetro
+item.immersivemagneticraft.battery_item.name=Bateria
+item.immersivemagneticraft.floppy_fisk.name=Disquete
+item.immersivemagneticraft.coal_coke.name=Carbon procesado
+
+immersivemagneticraft.guide.contents=Tabla de Contenidos
+immersivemagneticraft.guide.basics=Principiante
+immersivemagneticraft.guide.getting.started=Iniciación
+immersivemagneticraft.guide.link.text=%s, página %s
+
+tile.immersivemagneticraft.ore_block_copper.name=Mineral de Calcopirita
+tile.immersivemagneticraft.ore_block_lead.name=Mineral de Galena
+tile.immersivemagneticraft.ore_block_cobalt.name=Mineral de Cobaltita
+tile.immersivemagneticraft.ore_block_tungsten.name=Mineral de Wolframita
+tile.immersivemagneticraft.crushing_table.name=Mesa de Trituración
+tile.immersivemagneticraft.limestone_normal.name=Piedra Caliza
+tile.immersivemagneticraft.limestone_brick.name=Ladrillo de Caliza
+tile.immersivemagneticraft.limestone_cobble.name=Adoquín de Caliza
+tile.immersivemagneticraft.burnt_limestone_normal.name=Caliza Quemada
+tile.immersivemagneticraft.burnt_limestone_brick.name=Ladrillo de Caliza Quemada
+tile.immersivemagneticraft.burnt_limestone_cobble.name=Adoquín de Caliza Quemada
+tile.immersivemagneticraft.table_sieve.name=Mesa de Tamizado
+tile.immersivemagneticraft.feeding_trough.name=Abrevadero de Madera
+tile.immersivemagneticraft.electric_pole.name=Poste Eléctrico
+tile.immersivemagneticraft.electric_connector.name=Conector Eléctrico
+tile.immersivemagneticraft.incendiary_generator.name=Generador Térmico
+tile.immersivemagneticraft.block_battery.name=Batería
+tile.immersivemagneticraft.electric_pole_adapter.name=Poste Electrico con Transformador
+tile.immersivemagneticraft.electric_furnace.name=Horno Eléctrico
+tile.immersivemagneticraft.infinite_water.name=Bloque de Agua Infinita
+tile.immersivemagneticraft.tile_limestone.name=Baldosas de Caliza
+tile.immersivemagneticraft.infinite_energy.name=Bloque de Energía Infinita
+tile.immersivemagneticraft.airlock.name=Compartimento de aire
+tile.immersivemagneticraft.air_bubble.name=Burbuja de aire
+tile.immersivemagneticraft.hydraulic_press.name=Prensa Hidraulica
+tile.immersivemagneticraft.copper_block.name=Bloque de Cobre
+tile.immersivemagneticraft.cobalt_block.name=Bloque de Cobalto
+tile.immersivemagneticraft.lead_block.name=Bloque de Estaño
+tile.immersivemagneticraft.tungsten_block.name=Bloque de Tungsteno
+tile.immersivemagneticraft.machine_block.name=Componente de Maquinaria
+tile.immersivemagneticraft.machine_block_support_column.name=Columna de Soporte
+tile.immersivemagneticraft.striped_machine_block.name=Componente de Maquinaria a Tiras
+tile.immersivemagneticraft.solar_panel.name=Panel Solar
+tile.immersivemagneticraft.electrical_machine_block.name=Componente de Maquinaria Electrica
+
+itemGroup.immersivemagneticraft=immersivemagneticraft
+
+text.immersivemagneticraft.wire_connect.success=Cable Conectado
+text.immersivemagneticraft.wire_connect.fail=No se puede conectar el cable
+text.immersivemagneticraft.wire_connect.same_block=No se pueden conectar cables al mismo bloque
+text.immersivemagneticraft.wire_connect.no_other_connector=El cable no esta conectado
+text.immersivemagneticraft.auto_connect.activate=Conexion automatica activada
+text.immersivemagneticraft.auto_connect.deactivate=Conexion automatica desactivada
+text.immersivemagneticraft.jei.crushing_table=Mesa de Trituración
+text.immersivemagneticraft.jei.table_sieve=Mesa de Tamizado
+text.immersivemagneticraft.jei.hydraulic_press=Prensa Hidraulica
+text.immersivemagneticraft.multiblock.error_count=Se encontraron %d errores tratando de activar el multibloque
+text.immersivemagneticraft.multiblock.first_errors=Mostrando los %d primeros errores:
+text.immersivemagneticraft.multiblock.all_errors=Mostrando todos los errores:
+text.immersivemagneticraft.multiblock.invalid_block=El bloque %s es inválido, encontrado: %s, esperado: %s
+text.immersivemagneticraft.multiblock.activate=Activado satisfactoriamente
+tooltip.immersivemagneticraft.item_storage.energy=%.1f/%.1fJ
+
+#Translated by Simón133000 2016-09-10

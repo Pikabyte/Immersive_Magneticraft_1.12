@@ -25,7 +25,7 @@ class SingleBlockComponent(val origin: IBlockState, val replacement: IBlockState
             if (Debug.DEBUG && context.player != null && FMLCommonHandler.instance().effectiveSide == Side.SERVER) {
                 context.world.setBlockState(pos, origin)
             }
-            val keyStr = "text.immersive-magneticraft.multiblock.invalid_block"
+            val keyStr = "text.immersivemagneticraft.multiblock.invalid_block"
             val vecStr = "[%d, %d, %d]".format(pos.x, pos.y, pos.z)
             return listOf(keyStr.i18n(vecStr, state.prettyFormat(), origin.prettyFormat()))
         }

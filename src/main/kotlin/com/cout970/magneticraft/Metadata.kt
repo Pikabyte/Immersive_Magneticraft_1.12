@@ -13,7 +13,7 @@ import java.lang.reflect.Field
 import java.lang.reflect.Method
 
 // Mod metadata used by Forge
-const val MOD_ID = "immersive-magneticraft"
+const val MOD_ID = "immersivemagneticraft"
 const val MOD_NAME = "Immersive Magneticraft"
 const val LANG_ADAPTER = "com.cout970.magneticraft.KotlinAdapter"
 

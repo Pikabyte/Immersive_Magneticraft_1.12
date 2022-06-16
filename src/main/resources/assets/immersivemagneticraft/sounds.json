@@ -1,0 +1,29 @@
+{
+    "crushing_hit": {
+        "category": "block",
+        "sounds": [
+            "immersivemagneticraft:crushing_hit1",
+            "immersivemagneticraft:crushing_hit2",
+            "immersivemagneticraft:crushing_hit3"
+        ]
+    },
+    "crushing_final": {
+        "category": "block",
+        "sounds": [
+            "immersivemagneticraft:crushing_final1",
+            "immersivemagneticraft:crushing_final2"
+        ]
+    },
+    "water_flow": {
+        "category": "block",
+        "sounds": [
+            "immersivemagneticraft:water_flow"
+        ]
+    },
+    "water_flow_end": {
+        "category": "block",
+        "sounds": [
+            "immersivemagneticraft:water_flow_end"
+        ]
+    }
+}

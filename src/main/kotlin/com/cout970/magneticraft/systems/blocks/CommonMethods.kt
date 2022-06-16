@@ -51,9 +51,9 @@ object CommonMethods {
             }
             if (args.worldIn.isServer) {
                 if (electricModule.autoConnectWires) {
-                    args.playerIn.sendMessage("text.immersive-magneticraft.auto_connect.activate")
+                    args.playerIn.sendMessage("text.immersivemagneticraft.auto_connect.activate")
                 } else {
-                    args.playerIn.sendMessage("text.immersive-magneticraft.auto_connect.deactivate")
+                    args.playerIn.sendMessage("text.immersivemagneticraft.auto_connect.deactivate")
                 }
             }
             return true

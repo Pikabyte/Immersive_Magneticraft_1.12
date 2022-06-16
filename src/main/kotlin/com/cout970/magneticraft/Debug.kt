@@ -209,7 +209,7 @@ object Debug {
             val jsonStr = gson.toJson(obj)
 
             if (Keyboard.isKeyDown(Keyboard.KEY_C)) {
-                val folder = File(srcDir, "src/main/resources/assets/immersive-magneticraft/recipes")
+                val folder = File(srcDir, "src/main/resources/assets/immersivemagneticraft/recipes")
                 val fileName = handItem.unlocalizedName.replace(".name", "").replaceBeforeLast(".", "").substring(1)
                 val file = File(folder, "$fileName.json")
 

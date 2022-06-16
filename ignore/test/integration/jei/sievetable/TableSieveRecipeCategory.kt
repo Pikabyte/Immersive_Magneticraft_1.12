@@ -15,7 +15,7 @@ import net.minecraft.client.Minecraft
  */
 object TableSieveRecipeCategory : IRecipeCategory<TableSieveRecipeWrapper> {
 
-    private val title = Translator.translateToLocal("text.immersive-magneticraft.jei.table_sieve")
+    private val title = Translator.translateToLocal("text.immersivemagneticraft.jei.table_sieve")
     private val background = DrawableResource(resource("textures/gui/jei/gui.png"), 64, 0, 64, 64, 5, 5, 25, 25)
 
     override fun drawAnimations(minecraft: Minecraft) {}

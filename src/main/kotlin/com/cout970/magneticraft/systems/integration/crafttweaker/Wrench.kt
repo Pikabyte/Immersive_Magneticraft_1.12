@@ -6,7 +6,7 @@ import crafttweaker.api.item.IItemStack
 import stanhebben.zenscript.annotations.ZenClass
 import stanhebben.zenscript.annotations.ZenMethod
 
-@ZenClass("mods.magneticraft.Wrench")
+@ZenClass("mods.immersivemagneticraft.Wrench")
 @ZenRegister
 object Wrench {
 

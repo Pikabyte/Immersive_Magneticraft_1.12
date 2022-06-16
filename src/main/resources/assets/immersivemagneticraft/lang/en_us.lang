@@ -1,0 +1,97 @@
+item.immersivemagneticraft.guide_book_normal.name=immersivemagneticraft Manual
+
+gui.immersivemagneticraft.inserter.btn0=Whitelist
+gui.immersivemagneticraft.inserter.btn1=Ore Dictionary
+gui.immersivemagneticraft.inserter.btn2=Metadata
+gui.immersivemagneticraft.inserter.btn3=NBT
+gui.immersivemagneticraft.inserter.btn4=Drop items in world
+gui.immersivemagneticraft.inserter.btn5=Grab items in world
+
+gui.immersivemagneticraft.inserter.btn0_off=Blacklist
+gui.immersivemagneticraft.inserter.btn1_off=Ore Dictionary
+gui.immersivemagneticraft.inserter.btn2_off=Metadata
+gui.immersivemagneticraft.inserter.btn3_off=NBT
+gui.immersivemagneticraft.inserter.btn4_off=Drop items in world
+gui.immersivemagneticraft.inserter.btn5_off=Grab items in world
+
+gui.immersivemagneticraft.hydraulic_press.opt0=Light
+gui.immersivemagneticraft.hydraulic_press.opt1=Medium
+gui.immersivemagneticraft.hydraulic_press.opt2=Heavy
+
+gui.immersivemagneticraft.shelving_unit.opt0=Top level
+gui.immersivemagneticraft.shelving_unit.opt1=Middle level
+gui.immersivemagneticraft.shelving_unit.opt2=Bottom level
+
+gui.immersivemagneticraft.config_gui.title=immersivemagneticraft Config
+
+tile.immersivemagneticraft.crushing_table_normal.name=Crushing Table
+tile.immersivemagneticraft.sluice_box_center_north.name=Sluice Box
+tile.immersivemagneticraft.feeding_trough_center_north.name=Wooden Feeding Trough
+
+tile.immersivemagneticraft.inserter_north.name=Inserter
+tile.immersivemagneticraft.combustion_chamber_north.name=Solid Fuel Firebox
+tile.immersivemagneticraft.steam_boiler_normal.name=Solid Fuel Boiler
+tile.immersivemagneticraft.electric_engine_down.name=LV Alternator
+
+tile.immersivemagneticraft.airlock_normal.name=Bubble Dome Pressurizer
+tile.immersivemagneticraft.air_bubble_on.name=Air Bubble
+tile.immersivemagneticraft.air_bubble_off.name=Air Bubble
+
+# Multiblocks
+tile.immersivemagneticraft.sieve_inactive_north.name=Sieve
+tile.immersivemagneticraft.shelving_unit_inactive_north.name=Shelving Unit
+tile.immersivemagneticraft.steam_engine_inactive_north.name=Steam Engine
+tile.immersivemagneticraft.hydraulic_press_inactive_north.name=Precision Hydraulic Press
+tile.immersivemagneticraft.big_combustion_chamber_inactive_north.name=Large Solid Fuel Firebox
+tile.immersivemagneticraft.big_steam_boiler_inactive_north.name=Large Solid Fuel Boiler
+
+# Multiblock parts
+tile.immersivemagneticraft.multiblock_parts_base.name=Pressure Head Engineering Block
+tile.immersivemagneticraft.multiblock_parts_striped.name=Caution Engineering Block
+tile.immersivemagneticraft.multiblock_parts_grate.name=Mesh Engineering Block
+tile.immersivemagneticraft.multiblock_parts_corrugated_iron.name=Exhaust Engineering Block
+tile.immersivemagneticraft.multiblock_gap_normal.name=Multiblock
+tile.immersivemagneticraft.multiblock_gap.name=Multiblock
+
+# Creative tab
+itemGroup.immersivemagneticraft=immersivemagneticraft
+
+text.immersivemagneticraft.wire_connect.position=Position
+text.immersivemagneticraft.thermometer.temp=Temp: %s
+
+# JEI
+text.immersivemagneticraft.jei.crushing_table=Crushing Table
+text.immersivemagneticraft.jei.sluice_box=Sluice Box
+text.immersivemagneticraft.jei.hydraulic_press=Heavy Hydraulic Press
+text.immersivemagneticraft.jei.sieve=Sieve
+
+#Mining level
+text.immersivemagneticraft.jei.mining_level.-1=Mining Level: Any
+text.immersivemagneticraft.jei.mining_level.0=Mining Level: Wood
+text.immersivemagneticraft.jei.mining_level.1=Mining Level: Stone
+text.immersivemagneticraft.jei.mining_level.2=Mining Level: Iron
+text.immersivemagneticraft.jei.mining_level.3=Mining Level: Diamond
+text.immersivemagneticraft.jei.mining_level.4=Mining Level: Ardite
+text.immersivemagneticraft.jei.mining_level.other=Mining Level: %s
+
+text.immersivemagneticraft.jei.time=%s ticks
+text.immersivemagneticraft.jei.require_water=Needs 1 Water Bucket
+text.immersivemagneticraft.jei.temperature=Temperature: %s
+text.immersivemagneticraft.jei.head_conductivity=Conductivity: %.1f W/mK
+
+text.immersivemagneticraft.jei.hydraulic_hammer.light=Light Mode
+text.immersivemagneticraft.jei.hydraulic_hammer.medium=Medium Mode
+text.immersivemagneticraft.jei.hydraulic_hammer.heavy=Heavy Mode
+
+# Multiblock messages
+text.immersivemagneticraft.multiblock.invalid_block=Invalid block at %s\nFound: %s\nExpected: %s
+text.immersivemagneticraft.multiblock.invalid_column_orientation=Invalid block orientation at %s\nBlock found: %s\nExpected orientation: %s
+text.immersivemagneticraft.multiblock.activate=Successfully activated
+
+text.immersivemagneticraft.shelving_unit_add_chests=Add Chests to increase storage
+
+# Item tooltips
+tooltip.immersivemagneticraft.item_storage.energy=%f/%fJ
+tooltip.immersivemagneticraft.multiblock.blueprint=Place down this blueprint to see the multiblock pattern
+
+tooltip.immersivemagneticraft.small_tank.line_0=Holding %d mB of %s

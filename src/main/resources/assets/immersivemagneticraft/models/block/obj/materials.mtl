@@ -1,0 +1,33 @@
+
+newmtl electric_connector
+map_Kd immersivemagneticraft:blocks/electric_connector
+
+newmtl block_battery
+map_Kd immersivemagneticraft:blocks/block_battery
+
+newmtl incendiary_generator
+map_Kd immersivemagneticraft:blocks/incendiary_generator
+
+newmtl hydraulic_press
+map_Kd immersivemagneticraft:models/hydraulic_press
+
+newmtl solar_panel
+map_Kd immersivemagneticraft:models/solar_panel
+
+newmtl computer
+map_Kd immersivemagneticraft:models/computer
+
+newmtl grinder
+map_Kd immersivemagneticraft:models/grinder
+
+newmtl grinder_block
+map_Kd immersivemagneticraft:models/grinder_block
+
+newmtl kiln
+map_Kd immersivemagneticraft:models/kiln
+
+newmtl kiln_shelf
+map_Kd immersivemagneticraft:models/kiln_shelf
+
+newmtl sifter
+map_Kd immersivemagneticraft:models/sifter
